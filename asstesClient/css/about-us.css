@@ -1,0 +1,2334 @@
+/*----------------------------------------
+Project:	Masar Groub
+
+Devloper:	Hady Rabie - Mohamed Salah
+----------------------------------------*/
+/*----------------------------------------
+[Table of contents]
+
+1. header
+
+/*==============================
+	Header
+==============================*/
+header {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+    padding-bottom: 25px;
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(20deg,rgba(3, 3, 3, 0.911), rgba(0, 0, 0, 0.445)), url('../imag/cover (11).jpg') no-repeat center center /cover;
+    align-items: center;
+    margin: 70px auto 35px auto;
+}
+header h1{
+    font-size: 50px;
+    color: #fff;
+}
+/* End Header  */
+
+h1 {
+  font-size: 36px;
+}
+
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+h2 {
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  h2 {
+    font-size: 24px;
+  }
+}
+
+h3 {
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 767px) {
+  h3 {
+    font-size: 20px;
+  }
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+p {
+  margin-bottom: 0;
+  color: var(--p) !important;
+}
+
+a, button {
+  color: inherit;
+  display: inline-block;
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a, button, img, input {
+  transition: all 0.3s linear;
+  outline: 0;
+}
+
+a:focus, button:focus, img:focus, input:focus {
+  outline: 0;
+}
+
+a:focus {
+  color: none;
+  outline: none;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #086ad8;
+}
+
+ul, ol {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+button, input[type="submit"] {
+  cursor: pointer;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+input:-moz-placeholder, textarea:-moz-placeholder {
+  opacity: 1;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  opacity: 1;
+}
+
+/*-- Common Classes --*/
+.section,
+.main-wrapper {
+  float: left;
+  width: 100%;
+}
+
+/*--Section Spacing--*/
+.section-padding {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .section-padding {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .section-padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .section-padding {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.section-padding-02 {
+  padding-top: 120px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .section-padding-02 {
+    padding-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .section-padding-02 {
+    padding-top: 80px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .section-padding-02 {
+    padding-top: 60px;
+  }
+}
+
+.section-padding-03 {
+  padding-top: 140px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .section-padding-03 {
+    padding-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .section-padding-03 {
+    padding-top: 80px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .section-padding-03 {
+    padding-top: 60px;
+  }
+}
+
+/*--
+/*  03 - CTA CSS
+/*----------------------------------------*/
+.techwix-cta-section .cta-wrap {
+  background: #e6f0fb;
+  max-width: 845px;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 10px;
+  padding: 40px 125px;
+}
+
+@media only screen and (max-width: 575px) {
+  .techwix-cta-section .cta-wrap {
+    padding: 40px 90px;
+  }
+}
+
+@media only screen and (max-width: 449px) {
+  .techwix-cta-section .cta-wrap {
+    padding: 40px 70px;
+  }
+}
+
+.techwix-cta-section .cta-wrap .cta-icon {
+  position: absolute;
+  left: 30px;
+  top: -60px;
+  height: 85px;
+  width: 85px;
+  line-height: 85px;
+  text-align: center;
+  background: #ffffff;
+  box-shadow: 0px 20px 43px 0px rgba(0, 0, 0, 0.09);
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 991px) {
+  .techwix-cta-section .cta-wrap .cta-icon {
+    top: -40px;
+  }
+}
+
+.techwix-cta-section .cta-wrap .cta-content p {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #4c4d56;
+}
+
+.techwix-cta-section .cta-wrap .cta-content p a {
+  font-weight: 600;
+  color: #086ad8;
+}
+
+.techwix-cta-section .cta-wrap .cta-content p a:hover {
+  color: #0e0e0e;
+}
+
+.techwix-cta-section-02 .cta-wrap {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  border-radius: 10px;
+  padding: 55px 105px;
+  margin-bottom: -90px;
+}
+
+.techwix-cta-section-02 .cta-wrap .cta-content p {
+  font-size: 30px;
+  line-height: 44px;
+  font-weight: 600;
+  padding: 0 90px;
+  color: #ffffff !important;
+}
+
+.techwix-cta-section-02 .cta-wrap .cta-content .cta-icon {
+  width: 115px;
+  height: 115px;
+  line-height: 110px;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  top: -35px;
+  left: 35px;
+  right: 35px;
+  background: #010f31;
+}
+
+.techwix-cta-section-02 .cta-wrap .cta-btn {
+  text-align: right;
+}
+
+.techwix-cta-section-02 .cta-wrap .cta-btn .btn {
+  font-size: 22px;
+  background: #ffffff;
+  color: #0e0e0e;
+  padding: 0 35px;
+}
+
+.techwix-cta-section-02 .cta-wrap .cta-btn .btn:hover {
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 991px) {
+  .techwix-cta-section-02 .cta-wrap .cta-content {
+    text-align: center;
+    margin-top: 40px;
+  }
+  .techwix-cta-section-02 .cta-wrap .cta-content .cta-icon {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .techwix-cta-section-02 .cta-wrap .cta-content p {
+    padding-left: 0;
+  }
+  .techwix-cta-section-02 .cta-wrap .cta-btn {
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .techwix-cta-section-02 .cta-wrap {
+    padding: 55px 60px;
+  }
+}
+
+@media only screen and (max-width: 449px) {
+  .techwix-cta-section-02 .cta-wrap {
+    padding: 55px 25px;
+  }
+}
+
+.techwix-cta-section-03 .cta-wrap {
+  padding: 90px 105px;
+  border-radius: 10px;
+  background: #0c155f;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: -85px;
+  position: relative;
+  z-index: 5;
+}
+
+.techwix-cta-section-03 .cta-wrap .cta-content {
+  padding-right: 60px;
+}
+
+@media only screen and (max-width: 1399px) {
+  .techwix-cta-section-03 .cta-wrap .cta-content {
+    padding-right: 30px;
+  }
+}
+
+.techwix-cta-section-03 .cta-wrap .cta-content .title {
+  padding-left: 30px;
+  position: relative;
+}
+
+.techwix-cta-section-03 .cta-wrap .cta-content .title::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  background: linear-gradient(-160deg, #43baff 0%, #7141b1 100%);
+  width: 5px;
+  height: 100%;
+  transform: translateY(-45%);
+}
+
+.techwix-cta-section-03 .cta-wrap .cta-info p {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.techwix-cta-section-03 .cta-wrap .cta-info .number {
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 700;
+  color: #4bfff4;
+}
+
+@media only screen and (max-width: 1199px) {
+  .techwix-cta-section-03 .cta-wrap .cta-content {
+    padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .techwix-cta-section-03 .cta-wrap {
+    padding: 90px 75px;
+  }
+  .techwix-cta-section-03 .cta-wrap .cta-info {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 449px) {
+  .techwix-cta-section-03 .cta-wrap {
+    padding: 70px 40px;
+  }
+  .techwix-cta-section-03 .cta-wrap .cta-info .number {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+.techwix-cta-section-04 {
+  background: #0f0948;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.techwix-cta-section-04 .cta-left {
+  padding-right: 115px;
+}
+
+.techwix-cta-section-04 .cta-left .section-title .title {
+  position: relative;
+  padding-left: 40px;
+}
+
+.techwix-cta-section-04 .cta-left .section-title .title::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  background: linear-gradient(-160deg, #43baff 0%, #7141b1 100%);
+  width: 5px;
+  height: 100%;
+  transform: translateY(-45%);
+}
+
+.techwix-cta-section-04 .cta-left .cta-info {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.techwix-cta-section-04 .cta-left .cta-info .cta-text {
+  flex: 1;
+  margin-left: 30px;
+}
+
+.techwix-cta-section-04 .cta-left .cta-info .cta-text p {
+  font-size: 14px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.techwix-cta-section-04 .cta-left .cta-info .cta-text .number {
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.techwix-cta-section-04 .cta-right {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  max-width: 360px;
+}
+
+.techwix-cta-section-04 .cta-right::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 55%;
+  background: #27225b;
+  width: 360px;
+  height: 1px;
+  transform: translateY(-50%);
+}
+
+.techwix-cta-section-04 .cta-right::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: #27225b;
+  width: 1px;
+  height: 280px;
+  transform: translate(-50%, -50%);
+}
+
+.techwix-cta-section-04 .cta-right .counter-item-box {
+  position: relative;
+}
+
+.techwix-cta-section-04 .cta-right .counter-item.counter-1, .techwix-cta-section-04 .cta-right .counter-item.counter-2 {
+  padding-top: 45px;
+  margin-top: 25px;
+}
+
+.techwix-cta-section-04 .cta-right .counter-item span {
+  font-size: 48px;
+  line-height: 26px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  color: #11ddf5;
+}
+
+.techwix-cta-section-04 .cta-right .counter-item p {
+  font-size: 12px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 1199px) {
+  .techwix-cta-section-04 .cta-left {
+    padding-right: 0px;
+  }
+  .techwix-cta-section-04 .cta-right {
+    margin-top: 65px;
+  }
+  .techwix-cta-section-04 .cta-right::before {
+    width: 320px;
+  }
+  .techwix-cta-section-04 .cta-right::after {
+    height: 240px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .techwix-cta-section-04 .cta-right .counter-item span {
+    font-size: 42px;
+  }
+}
+
+.techwix-cta-section-05 .cta-wrap {
+  background: #0f0948;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 10px;
+  margin-bottom: -85px;
+  position: relative;
+  z-index: 5;
+  padding: 80px 110px 105px;
+}
+
+.techwix-cta-section-05 .cta-wrap .cta-content .title {
+  font-size: 42px;
+  line-height: 54px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.techwix-cta-section-05 .cta-wrap .cta-content .cta-btn .btn-4 {
+  height: 45px;
+  line-height: 45px;
+  font-size: 15px;
+  padding: 0 30px;
+  margin-top: 35px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .techwix-cta-section-05 .cta-wrap {
+    padding: 80px 75px 80px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .techwix-cta-section-05 .cta-wrap {
+    padding: 70px 70px 70px;
+  }
+  .techwix-cta-section-05 .cta-wrap .cta-content .title {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+@media only screen and (max-width: 449px) {
+  .techwix-cta-section-05 .cta-wrap {
+    padding: 70px 50px 70px;
+  }
+  .techwix-cta-section-05 .cta-wrap .cta-content .title {
+    font-size: 32px;
+    line-height: 44px;
+  }
+}
+
+.techwix-cta-section-06 {
+  background: #010f31;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media only screen and (max-width: 991px) {
+  .techwix-cta-section-06 .cta-info {
+    margin-top: 50px;
+  }
+}
+
+.techwix-cta-section-06 .cta-info .cta-text {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 991px) {
+  .techwix-cta-section-06 .cta-info .cta-text {
+    margin-left: 0;
+  }
+}
+
+.techwix-cta-section-06 .cta-info .cta-text p {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.techwix-cta-section-06 .cta-info .cta-text .number {
+  font-size: 36px;
+  line-height: 42px;
+  color: #086ad8;
+}
+
+.techwix-cta-section-07 {
+  background: none;
+}
+
+.techwix-cta-section-07 .cta-wrap {
+  background: #010f31;
+  padding: 105px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: -150px;
+  position: relative;
+  z-index: 5;
+}
+
+@media only screen and (max-width: 1199px) {
+  .techwix-cta-section-07 .cta-info .cta-text {
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .techwix-cta-section-07 .cta-info {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .techwix-cta-section-07 .cta-wrap {
+    padding: 80px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .techwix-cta-section-07 .cta-wrap {
+    padding: 60px;
+  }
+  .techwix-cta-section-07 .cta-info .cta-text .number {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+@media only screen and (max-width: 449px) {
+  .techwix-cta-section-07 .cta-wrap {
+    padding: 45px;
+  }
+}
+
+/*--
+/*  03 - About CSS
+/*----------------------------------------*/
+.techwix-about-section {
+  background: #0c0520;
+  padding-top: 200px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.techwix-about-section .shape-1 {
+  position: absolute;
+  width: 100%;
+  height: 130px;
+  right: 0;
+  left: 0px;
+  top: -30px;
+  background: #ffffff;
+  transform: skewY(-3deg);
+  transform-origin: 0;
+  z-index: 2;
+}
+
+.techwix-about-section .about-img-wrap {
+  position: relative;
+}
+
+.techwix-about-section .about-img-wrap .about-img img {
+  border-radius: 10px;
+}
+
+.techwix-about-section .about-img-wrap .about-img.about-img-big {
+  padding-top: 80px;
+}
+
+.techwix-about-section .about-img-wrap .about-img.about-img-sm {
+  position: absolute;
+  top: 0px;
+  right: 0;
+}
+
+.techwix-about-section .about-img-wrap .about-img.about-img-sm .shape-01 {
+  position: absolute;
+  width: 9px;
+  height: 235px;
+  background: #086ad8;
+  right: 10px;
+  bottom: -270px;
+}
+
+.techwix-about-section .about-content-wrap {
+  padding-left: 100px;
+}
+
+.techwix-about-section .about-content-wrap .section-title .title {
+    color: var(--color);
+
+}
+
+.techwix-about-section .about-content-wrap .section-title .sub-title {
+    color: var(--color);
+
+}
+
+.techwix-about-section .about-content-wrap p {
+  font-size: 16px;
+  line-height: 30px;
+    color: var(--color);
+
+  padding-right: 15px;
+  margin-top: 20px;
+}
+
+.techwix-about-section .about-content-wrap .play-btn {
+  margin-top: 60px;
+}
+
+.techwix-about-section .about-content-wrap .play-btn a {
+  position: relative;
+}
+
+.techwix-about-section .about-content-wrap .play-btn a i {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 15px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  background: linear-gradient(240deg, #086ad8 0%, #42b9ff 100%);
+  color: #ffffff;
+  transition: all 0.3s linear;
+}
+
+.techwix-about-section .about-content-wrap .play-btn a span {
+  font-size: 24px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  margin-left: 30px;
+}
+
+.techwix-about-section .about-content-wrap .play-btn a::before {
+  content: "";
+  border: 2px solid #ffffff;
+  position: absolute;
+  z-index: 0;
+  left: 16%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  -webkit-animation: zoombig 3.25s linear infinite;
+          animation: zoombig 3.25s linear infinite;
+  -webkit-animation-delay: .8s;
+          animation-delay: .8s;
+}
+
+.techwix-about-section .about-content-wrap .play-btn a::after {
+  content: "";
+  border: 2px solid #ffffff;
+  position: absolute;
+  z-index: 0;
+  left: 16%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  -webkit-animation: zoombig 3.25s linear infinite;
+          animation: zoombig 3.25s linear infinite;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.techwix-about-section .about-content-wrap .play-btn a:hover i {
+  background: linear-gradient(180deg, #086ad8 0%, #42b9ff 100%);
+}
+
+@media only screen and (max-width: 1199px) {
+  .techwix-about-section {
+    padding-top: 165px;
+  }
+  .techwix-about-section .shape-1 {
+    top: -60px;
+  }
+  .techwix-about-section .about-img-wrap .about-img.about-img-sm {
+    right: -25px;
+  }
+  .techwix-about-section .about-img-wrap .about-img.about-img-sm .shape-01 {
+    height: 190px;
+    bottom: -228px;
+  }
+  .techwix-about-section .about-content-wrap {
+    padding-left: 50px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .techwix-about-section {
+    padding-top: 135px;
+  }
+  .techwix-about-section .about-content-wrap {
+    padding-left: 0px;
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .techwix-about-section {
+    padding-top: 150px;
+  }
+  .techwix-about-section .about-img-wrap .about-img.about-img-big {
+    padding-top: 0px;
+  }
+  .techwix-about-section .about-img-wrap .about-img.about-img-sm {
+    display: none;
+  }
+}
+
+@-webkit-keyframes zoombig {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 1;
+    border-width: 3px;
+  }
+  40% {
+    opacity: .5;
+    border-width: 3px;
+  }
+  65% {
+    border-width: 2px;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+    border-width: 2px;
+  }
+}
+
+@keyframes zoombig {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 1;
+    border-width: 3px;
+  }
+  40% {
+    opacity: .5;
+    border-width: 3px;
+  }
+  65% {
+    border-width: 2px;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+    border-width: 2px;
+  }
+}
+
+.techwix-about-section-02 .about-02-left {
+  padding: 0 35px;
+}
+
+.techwix-about-section-02 .about-02-left .section-title .title {
+  font-size: 42px;
+  line-height: 60px;
+}
+
+.techwix-about-section-02 .about-02-left .about-author {
+  margin-top: 30px;
+}
+
+.techwix-about-section-02 .about-02-left .about-author .name {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 20px;
+}
+
+.techwix-about-section-02 .about-02-left .about-author .designation {
+  font-size: 12px;
+  line-height: 18px;
+  color: #4c4d56;
+}
+
+.techwix-about-section-02 .about-02-right {
+  position: relative;
+  padding-left: 112px;
+}
+
+.techwix-about-section-02 .about-02-right::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #e1e1e1;
+  width: 1px;
+  height: 350px;
+}
+
+.techwix-about-section-02 .about-02-right p {
+  font-size: 16px;
+  line-height: 30px;
+  color: #4c4d56;
+}
+
+.about-list {
+  margin-top: 40px;
+}
+
+.about-list ul li {
+  font-size: 16px;
+  line-height: 36px;
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  color: #333333;
+}
+
+.about-list ul li i {
+  font-size: 16px;
+  color: #086ad8;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .techwix-about-section-02 .about-02-right {
+    padding-left: 80px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .techwix-about-section-02 .about-02-left {
+    padding: 0 0px;
+  }
+  .techwix-about-section-02 .about-02-right {
+    padding-left: 0px;
+    margin-top: 50px;
+  }
+  .techwix-about-section-02 .about-02-right::before {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .techwix-about-section-02 .about-02-left .section-title .title {
+    font-size: 36px;
+    line-height: 52px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .techwix-about-section-02 .about-02-left .section-title .title {
+    font-size: 30px;
+    line-height: 48px;
+  }
+}
+
+.techwix-about-section-03 {
+  overflow: hidden;
+  padding-bottom: 180px;
+}
+
+.techwix-about-section-03 .about-content-03 {
+  padding-right: 145px;
+}
+
+.techwix-about-section-03 .about-content-03 .text {
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 20px;
+}
+
+.techwix-about-section-03 .about-content-03 .about-quote {
+  background: #fff6f5;
+  padding: 40px 30px;
+  padding-right: 85px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.techwix-about-section-03 .about-content-03 .about-quote .blockquote {
+  padding-left: 60px;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.techwix-about-section-03 .about-content-03 .about-quote .blockquote::before {
+  content: '\f115';
+  font-family: flaticon !important;
+  font-size: 40px;
+  line-height: 1;
+  margin-right: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ff5538;
+}
+
+.techwix-about-section-03 .about-content-03 .about-quote .blockquote p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #0e0e0e;
+}
+
+.techwix-about-section-03 .about-content-03 .about-list-02 {
+  padding-top: 20px;
+  padding-right: 25px;
+}
+
+.techwix-about-section-03 .about-content-03 .about-list-02 .about-list-item-02 {
+  margin-top: 20px;
+}
+
+.techwix-about-section-03 .about-content-03 .about-list-02 .about-list-item-02 .title {
+  font-size: 18px;
+  line-height: 30px;
+  color: #231e32;
+}
+
+.techwix-about-section-03 .about-content-03 .about-list-02 .about-list-item-02 .title i {
+  color: #ff5538;
+  margin-right: 7px;
+}
+
+.techwix-about-section-03 .about-content-03 .about-list-02 .about-list-item-02 P {
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 10px;
+}
+
+.techwix-about-section-03 .about-img-warp-3 {
+  position: relative;
+  z-index: 1;
+}
+
+.techwix-about-section-03 .about-img-warp-3 .shape-1 {
+  width: 520px;
+  height: 490px;
+  background: #ff5538;
+  position: absolute;
+  left: 85px;
+  bottom: -30px;
+  z-index: -1;
+}
+
+.techwix-about-section-03 .about-img-warp-3 .about-img img {
+  border-radius: 10px;
+}
+
+.techwix-about-section-03 .about-img-warp-3 .about-img-big {
+  text-align: right;
+}
+
+.techwix-about-section-03 .about-img-warp-3 .about-img-sm {
+  position: absolute;
+  left: 0px;
+  bottom: -65px;
+}
+
+@media only screen and (max-width: 1399px) {
+  .techwix-about-section-03 .about-content-03 {
+    padding-right: 60px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .techwix-about-section-03 {
+    padding-bottom: 100px;
+  }
+  .techwix-about-section-03 .about-content-03 {
+    padding-right: 40px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .techwix-about-section-03 {
+    padding-bottom: 180px;
+  }
+  .techwix-about-section-03 .about-content-03 {
+    padding-right: 140px;
+    margin-bottom: 60px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .techwix-about-section-03 {
+    padding-bottom: 150px;
+  }
+  .techwix-about-section-03 .about-content-03 {
+    padding-right: 0px;
+  }
+  .techwix-about-section-03 .about-img-warp-3 .shape-1 {
+    left: 25px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .techwix-about-section-03 {
+    padding-bottom: 70px;
+  }
+  .techwix-about-section-03 .about-content-03 .about-quote {
+    padding-right: 35px;
+  }
+  .techwix-about-section-03 .about-img-warp-3 .shape-1 {
+    display: none;
+  }
+  .techwix-about-section-03 .about-img-warp-3 .about-img-big {
+    text-align: center;
+  }
+  .techwix-about-section-03 .about-img-warp-3 .about-img-sm {
+    display: none;
+  }
+}
+
+.techwix-about-section-04 .about-content-wrap {
+  padding-right: 105px;
+}
+
+.techwix-about-section-04 .about-content-wrap .text {
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 30px;
+}
+
+.techwix-about-section-04 .about-img-wrap {
+  position: relative;
+}
+
+.techwix-about-section-04 .about-img-wrap .about-img img {
+  border-radius: 10px;
+}
+
+.techwix-about-section-04 .about-img-wrap .about-img-big {
+  text-align: right;
+}
+
+.techwix-about-section-04 .about-img-wrap .about-img-sm {
+  position: absolute;
+  left: -15px;
+  bottom: 35px;
+  border: 8px solid #ffffff;
+  border-radius: 10px;
+}
+
+.about-author-info-wrap {
+  display: flex;
+  align-items: center;
+  border-top: 2px solid #ececec;
+  margin-top: 30px;
+  padding-top: 30px;
+}
+
+.about-author-info-wrap .about-author .name {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.about-author-info-wrap .about-author .designation {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.about-author-info-wrap .about-info {
+  flex: 1;
+  padding-left: 50px;
+  margin-left: 30px;
+  position: relative;
+}
+
+.about-author-info-wrap .about-info::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  background: #ececec;
+  width: 2px;
+  height: 95px;
+  transform: translateY(-50%);
+}
+
+.about-author-info-wrap .about-info p {
+  font-size: 16px;
+  line-height: 30px;
+  color: #0e0e0e;
+}
+
+.about-author-info-wrap .about-info .number {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 600;
+  color: #086ad8;
+}
+
+@media only screen and (max-width: 449px) {
+  .about-author-info-wrap .about-info {
+    padding-left: 20px;
+    margin-left: 15px;
+  }
+  .about-author-info-wrap .about-info p {
+    font-size: 15px;
+  }
+}
+
+.play-btn-02 {
+  position: absolute;
+  left: 15%;
+  top: 16%;
+}
+
+.play-btn-02 a {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 15px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  border-radius: 50%;
+  background: linear-gradient(240deg, #086ad8 0%, #42b9ff 100%);
+  color: #ffffff;
+  transition: all 0.3s linear;
+}
+
+.play-btn-02 a::before {
+  content: "";
+  border: 2px solid #086ad8;
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  -webkit-animation: zoombig 3.25s linear infinite;
+          animation: zoombig 3.25s linear infinite;
+  -webkit-animation-delay: .8s;
+          animation-delay: .8s;
+}
+
+.play-btn-02 a::after {
+  content: "";
+  border: 2px solid #086ad8;
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  -webkit-animation: zoombig 3.25s linear infinite;
+          animation: zoombig 3.25s linear infinite;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.play-btn-02 a:hover {
+  background: linear-gradient(180deg, #086ad8 0%, #42b9ff 100%);
+}
+
+@media only screen and (max-width: 1199px) {
+  .techwix-about-section-04 .about-content-wrap {
+    padding-right: 40px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .techwix-about-section-04 .about-img-wrap {
+    margin-top: 60px;
+  }
+  .techwix-about-section-04 .play-btn-02 {
+    left: 22%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .techwix-about-section-04 .play-btn-02 {
+    left: 2%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .techwix-about-section-04 .about-content-wrap {
+    padding-right: 0px;
+  }
+  .techwix-about-section-04 .about-img-wrap {
+    position: relative;
+  }
+  .techwix-about-section-04 .about-img-wrap .about-img-big {
+    text-align: center;
+  }
+  .techwix-about-section-04 .about-img-wrap .about-img-sm {
+    display: none;
+  }
+  .techwix-about-section-04 .play-btn-02 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.techwix-about-section-05 .section-title {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.techwix-about-section-05 .about-img-wrap {
+  position: relative;
+}
+
+.techwix-about-section-05 .about-img-wrap .about-img img {
+  border-radius: 15px;
+}
+
+.techwix-about-section-05 .about-img-wrap .about-img-big {
+  text-align: right;
+}
+
+.techwix-about-section-05 .about-img-wrap .about-img-sm {
+  position: absolute;
+  top: 80px;
+  left: 0;
+}
+
+.techwix-about-section-05 .about-content-wrap {
+  padding-top: 100px;
+}
+
+.techwix-about-section-05 .about-content {
+  padding-left: 120px;
+}
+
+.techwix-about-section-05 .about-content .title {
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 500;
+  color: #0e0e0e;
+}
+
+.techwix-about-section-05 .about-content .text {
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 30px;
+}
+
+.techwix-about-section-05 .about-content .about-list-item-wrap {
+  margin-top: -20px;
+}
+
+.techwix-about-section-05 .about-content .about-list-item-wrap .about-list-item {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.techwix-about-section-05 .about-content .about-list-item-wrap .about-list-item .about-text {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.techwix-about-section-05 .about-content .about-list-item-wrap .about-list-item .about-text .title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+.techwix-about-section-05 .about-content .about-list-item-wrap .about-list-item .about-text p {
+  font-size: 14px;
+  line-height: 27px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .techwix-about-section-05 .about-content-wrap {
+    padding-top: 80px;
+  }
+  .techwix-about-section-05 .about-content {
+    padding-left: 60px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .techwix-about-section-05 .about-content-wrap {
+    padding-top: 60px;
+  }
+  .techwix-about-section-05 .about-img-wrap .about-img-big {
+    text-align: center;
+  }
+  .techwix-about-section-05 .about-content {
+    padding-left: 0px;
+    margin-top: 60px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .techwix-about-section-05 .about-img-wrap .about-img-sm {
+    display: none;
+  }
+}
+
+.techwix-about-section-06 {
+  padding-bottom: 200px;
+}
+
+.techwix-about-section-06 .about-img {
+  position: relative;
+  margin-top: 70px;
+  z-index: 1;
+}
+
+.techwix-about-section-06 .about-img .shape-1 {
+  position: absolute;
+  left: 0;
+  top: -25%;
+  -webkit-animation: round-01 7s linear infinite;
+          animation: round-01 7s linear infinite;
+  z-index: -1;
+}
+
+.techwix-about-section-06 .about-img .play-btn {
+  position: absolute;
+  top: -25px;
+  right: 135px;
+}
+
+.techwix-about-section-06 .about-img .play-btn a {
+  width: 80px;
+  height: 80px;
+  line-height: 68px;
+  font-size: 15px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 7px solid #ffffff;
+  background: #11ddf5;
+  color: #ffffff;
+}
+
+.techwix-about-section-06 .about-img .play-btn a:hover {
+  background: #0f0948;
+  color: #ffffff;
+}
+
+.techwix-about-section-06 .about-img .image {
+  padding-left: 70px;
+}
+
+.techwix-about-section-06 .about-img .image img {
+  border-radius: 50%;
+}
+
+.techwix-about-section-06 .about-content-wrap {
+  padding-right: 115px;
+}
+
+.techwix-about-section-06 .about-content-wrap .text {
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 25px;
+}
+
+.techwix-about-section-06 .about-content-wrap .about-list-wrap {
+  padding-top: 50px;
+}
+
+.techwix-about-section-06 .about-content-wrap .about-list-wrap .about-list li {
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+.techwix-about-section-06 .about-content-wrap .about-list-wrap .about-list li:last-child {
+  margin-bottom: 0;
+}
+
+.techwix-about-section-06 .about-content-wrap .about-list-wrap .about-list li a {
+  font-size: 20px;
+  line-height: 30px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  color: #0e0e0e;
+}
+
+@media only screen and (max-width: 575px) {
+  .techwix-about-section-06 .about-content-wrap .about-list-wrap .about-list li a {
+    font-size: 18px;
+  }
+}
+
+.techwix-about-section-06 .about-content-wrap .about-list-wrap .about-list li a:hover {
+  color: #11ddf5;
+}
+
+.techwix-about-section-06 .about-content-wrap .about-list-wrap .about-list li a:hover i {
+  transform: translateX(20px);
+}
+
+.techwix-about-section-06 .about-content-wrap .about-list-wrap .about-list li a i {
+  transform: translateX(15px);
+  transition: all 0.3s linear;
+}
+
+@media only screen and (max-width: 1199px) {
+  .techwix-about-section-06 {
+    padding-bottom: 100px;
+  }
+  .techwix-about-section-06 .about-img .shape-1 {
+    top: -13%;
+  }
+  .techwix-about-section-06 .about-img .image {
+    padding-left: 30px;
+  }
+  .techwix-about-section-06 .about-content-wrap {
+    padding-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .techwix-about-section-06 .about-img .shape-1 {
+    top: -25%;
+    left: 11%;
+  }
+  .techwix-about-section-06 .about-img .image {
+    text-align: center;
+    padding-left: 0px;
+  }
+  .techwix-about-section-06 .about-content-wrap {
+    margin-top: 150px;
+  }
+  .techwix-about-section-06 .about-content-wrap .about-list-wrap {
+    padding-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .techwix-about-section-06 .about-img .shape-1 {
+    top: -20%;
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .techwix-about-section-06 .about-img .shape-1 {
+    top: -10%;
+  }
+  .techwix-about-section-06 .about-content-wrap {
+    margin-top: 110px;
+  }
+}
+
+@media only screen and (max-width: 449px) {
+  .techwix-about-section-06 .about-content-wrap {
+    margin-top: 80px;
+  }
+}
+
+.techwix-about-section-07 .about-img-wrap {
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+.techwix-about-section-07 .about-img-wrap .shape-1 {
+  position: absolute;
+  right: 55px;
+  bottom: -30px;
+  z-index: -1;
+}
+
+.techwix-about-section-07 .about-img-wrap .about-img {
+  overflow: hidden;
+}
+
+.techwix-about-section-07 .about-img-wrap .about-img img {
+  border-radius: 10px;
+}
+
+.techwix-about-section-07 .about-img-wrap .about-img:first-child {
+  padding-right: 15px;
+}
+
+.techwix-about-section-07 .about-img-wrap .about-img:last-child {
+  padding-left: 15px;
+  margin-top: 75px;
+}
+
+.techwix-about-section-07 .about-content-wrap {
+  padding-left: 90px;
+  color: var(--color);
+}
+
+.techwix-about-section-07 .about-content-wrap .text {
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 25px;
+  color: var(--p);
+}
+
+.techwix-about-section-07 .about-content-wrap .about-list-03 {
+  border-top: 1px solid #e1e1e1;
+  margin-top: 40px;
+  padding-top: 15px;
+}
+
+.techwix-about-section-07 .about-content-wrap .about-list-03 .about-list-item-03 {
+  padding-right: 40px;
+  margin-top: 25px;
+}
+
+.techwix-about-section-07 .about-content-wrap .about-list-03 .about-list-item-03 .title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--color);
+}
+
+.techwix-about-section-07 .about-content-wrap .about-list-03 .about-list-item-03 p {
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--p);
+}
+
+@media only screen and (max-width: 1199px) {
+  .techwix-about-section-07 .about-img-wrap .shape-1 {
+    right: 10px;
+    bottom: -30px;
+    width: 370px;
+  }
+  .techwix-about-section-07 .about-content-wrap {
+    padding-left: 40px;
+  }
+  .techwix-about-section-07 .about-content-wrap .about-list-03 .about-list-item-03 {
+    padding-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .techwix-about-section-07 .about-img-wrap {
+    justify-content: center;
+  }
+  .techwix-about-section-07 .about-img-wrap .shape-1 {
+    right: 75px;
+    width: inherit;
+  }
+  .techwix-about-section-07 .about-content-wrap {
+    padding-left: 0px;
+    padding-top: 60px;
+  }
+  .techwix-about-section-07 .about-content-wrap .about-list-03 .about-list-item-03 {
+    padding-right: 40px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .techwix-about-section-07 .about-img-wrap .shape-1 {
+    right: 40px;
+    width: 370px;
+  }
+  .techwix-about-section-07 .about-content-wrap .about-list-03 .about-list-item-03 {
+    padding-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .techwix-about-section-07 .about-img-wrap .shape-1 {
+    display: none;
+  }
+}
+
+/*--
+/*  03 - Counter CSS
+/*----------------------------------------*/
+.techwix-counter-section {
+  background: #e5effa;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+.techwix-counter-section .counter-wrap {
+  margin-top: -30px;
+}
+
+.single-counter {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.single-counter .counter-img {
+  height: 95px;
+  width: 95px;
+  line-height: 95px;
+  text-align: center;
+  background: #ffffff;
+  box-shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0.09);
+  border-radius: 10px;
+}
+
+.single-counter .counter-content {
+  margin-left: 20px;
+}
+
+.single-counter .counter-content span {
+  font-size: 40px;
+  line-height: 26px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  color: #086ad8;
+}
+
+.single-counter .counter-content p {
+  font-size: 12px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4c4d56;
+}
+
+.techwix-counter-section-02 .counter-wrap {
+  border: 1px solid #e1e1e1;
+  background: #ffffff;
+  margin-bottom: -120px;
+  position: relative;
+  z-index: 5;
+  padding: 15px 25px 75px;
+}
+
+.techwix-counter-section-02 .single-counter {
+  position: relative;
+  margin-left: 30px;
+}
+
+.techwix-counter-section-02 .single-counter::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  background: #e1e1e1;
+  width: 1px;
+  height: 220px;
+  transform: translateY(-44%);
+}
+
+.techwix-counter-section-02 .single-counter.single-counter-4::before {
+  display: none;
+}
+
+@media only screen and (max-width: 1199px) {
+  .techwix-counter-section-02 .counter-wrap {
+    padding: 15px 55px 75px;
+  }
+  .techwix-counter-section-02 .single-counter {
+    margin-left: 0px;
+  }
+  .techwix-counter-section-02 .single-counter::before {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 449px) {
+  .techwix-counter-section-02 .counter-wrap {
+    padding: 15px 28px 75px;
+  }
+}
+
+.techwix-counter-section-03 {
+  background: #010642;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 80px;
+  padding-bottom: 110px;
+  position: relative;
+  z-index: 1;
+}
+
+.techwix-counter-section-03::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(1, 1, 63, 0.9);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.single-counter-02 {
+  margin-top: 30px;
+}
+
+.single-counter-02 span {
+  font-size: 50px;
+  line-height: 30px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  color: #086ad8;
+}
+
+.single-counter-02 p {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: capitalize;
+  color: #ffffff !important;
+}
+
+.techwix-counter-section-04 {
+  background: none;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.techwix-counter-section-04::before {
+  display: none;
+}
+
+.techwix-counter-section-04 .counter-wrap {
+  background: linear-gradient(55deg, #693eaa 25%, #47bbff 100%);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: -110px;
+  padding-top: 65px;
+  padding-bottom: 95px;
+}
+
+.techwix-counter-section-04 .counter-wrap .single-counter-02 span {
+  color: #ffffff;
+}
+
+/*--
+/*  03 - Choose Us CSS
+/*----------------------------------------*/
+.techwix-choose-us-section {
+  padding-top: 210px;
+}
+
+.techwix-choose-us-section .section-title {
+  max-width: 570px;
+  margin: 0 auto;
+  color: var(--color);
+}
+
+.choose-us-content-wrap {
+  padding-top: 30px;
+}
+
+.choose-us-content-wrap .more-choose-content {
+  margin-top: 30px;
+}
+
+.choose-us-content-wrap .more-choose-content p {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.choose-us-content-wrap .more-choose-content p a {
+  font-weight: 600;
+  color: #086ad8;
+}
+
+.choose-us-content-wrap .more-choose-content p a i {
+  position: relative;
+  top: 1px;
+  transition: all 0.3s linear;
+}
+
+.choose-us-content-wrap .more-choose-content p a:hover i {
+  margin-left: 5px;
+}
+
+.choose-us-item {
+  margin-top: 30px;
+}
+
+.choose-us-item .choose-us-img {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+
+.choose-us-item .choose-us-img a {
+  display: block;
+  position: relative;
+}
+
+.choose-us-item .choose-us-img a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(180deg, rgba(249, 80, 0, 0) 35%, rgba(14, 14, 14, 0.92) 78%);
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.choose-us-item .choose-us-img .choose-us-content {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  padding: 60px 60px;
+  padding-right: 75px;
+}
+
+.choose-us-item .choose-us-img .choose-us-content .title {
+  font-size: 24px;
+  line-height: 27px;
+  color: #ffffff;
+  padding-left: 15px;
+  position: relative;
+}
+
+.choose-us-item .choose-us-img .choose-us-content .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  background: linear-gradient(-160deg, #43baff 0%, #7141b1 100%);
+  width: 3px;
+  height: 50px;
+  transform: translateY(-50%);
+}
+
+.choose-us-item .choose-us-img .choose-us-content p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: -115px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s linear;
+}
+
+.choose-us-item:hover .choose-us-img .choose-us-content p {
+  opacity: 1;
+  visibility: visible;
+  margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 1399px) {
+  .choose-us-item .choose-us-img .choose-us-content {
+    padding-right: 40px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .choose-us-item .choose-us-img .choose-us-content {
+    padding: 40px 30px;
+    padding-right: 25px;
+  }
+}
+
+.techwix-choose-us-section-02 {
+  background: #f8f8f8;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-bottom: 400px;
+  z-index: 1;
+}
+
+.techwix-choose-us-section-02 .choose-us-left {
+  padding-right: 50px;
+}
+
+.techwix-choose-us-section-02 .choose-us-left .text {
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 40px;
+  padding-right: 65px;
+}
+
+.techwix-choose-us-section-02 .choose-us-left .author-skill-wrap {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  padding-right: 40px;
+}
+
+.techwix-choose-us-section-02 .choose-us-left .author-skill-wrap .author-wrap .name {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.techwix-choose-us-section-02 .choose-us-left .author-skill-wrap .author-wrap .designation {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.techwix-choose-us-section-02 .choose-us-left .author-skill-wrap .skill-wrap {
+  flex: 1;
+  padding-left: 50px;
+  margin-left: 30px;
+  position: relative;
+}
+
+.techwix-choose-us-section-02 .choose-us-left .author-skill-wrap .skill-wrap::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  background: #ececec;
+  width: 2px;
+  height: 95px;
+  transform: translateY(-50%);
+}
+
+.techwix-choose-us-section-02 .choose-us-left .author-skill-wrap .skill-wrap .counter-bar {
+  padding-top: 0px;
+}
+
+.techwix-choose-us-section-02 .choose-us-left .author-skill-wrap .skill-wrap .counter-bar .skill-item {
+  margin-top: 15px;
+}
+
+.techwix-choose-us-section-02 .choose-us-left .author-skill-wrap .skill-wrap .counter-bar .skill-item.skill-item-01 {
+  margin-top: 0;
+}
+
+.techwix-choose-us-section-02 .choose-us-left .author-skill-wrap .skill-wrap .counter-bar .skill-item .skill-bar .bar-inner .progress-line {
+  background: #086ad8;
+}
+
+.techwix-choose-us-section-02 .choose-us-right {
+  padding-left: 10px;
+}
+
+@media only screen and (max-width: 991px) {
+  .techwix-choose-us-section-02 .choose-us-right .faq-accordion {
+    margin-top: 50px;
+  }
+}
+
+.techwix-choose-us-section-02 .choose-us-right .faq-accordion .accordion-item {
+  border: 0;
+  box-shadow: 0px 0px 161px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 35px;
+}
+
+.techwix-choose-us-section-02 .choose-us-right .faq-accordion .accordion-item .accordion-button {
+  padding: 25px 35px;
+}
+
+.techwix-choose-us-section-02 .choose-us-right .faq-accordion .accordion-item .accordion-button .title {
+  font-size: 22px;
+  color: #0e0e0e;
+  font-family: "Barlow", sans-serif;
+  display: inline-block;
+  font-weight: 600;
+  text-transform: capitalize;
+  position: relative;
+  z-index: 1;
+}
+
+.techwix-choose-us-section-02 .choose-us-right .faq-accordion .accordion-item .accordion-button::after {
+  position: absolute;
+  content: "+";
+  border: none;
+  width: 30px;
+  height: 30px;
+  line-height: 24px;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  border-radius: 50%;
+  color: #ffffff;
+  background: linear-gradient(-140deg, #43baff 0%, #7141b1 100%);
+  right: 35px;
+  transition: all .3s ease-out 0s;
+}
+
+.techwix-choose-us-section-02 .choose-us-right .faq-accordion .accordion-item .accordion-body {
+  font-size: 14px;
+  border-top: 1px solid #ebebeb;
+  padding: 30px 35px;
+}
+
+.techwix-choose-us-section-02 .choose-us-right .faq-accordion .accordion-item .accordion-button:focus {
+  box-shadow: none;
+}
+
+.techwix-choose-us-section-02 .choose-us-right .faq-accordion .accordion-item .accordion-button:not(.collapsed) {
+  background-color: #ffffff;
+  box-shadow: none;
+}
+
+.techwix-choose-us-section-02 .choose-us-right .faq-accordion .accordion-item .accordion-button:not(.collapsed)::after {
+  position: absolute;
+  content: "-";
+  border: none;
+  width: 30px;
+  height: 30px;
+  line-height: 24px;
+  text-align: center;
+  background: #e6eef8;
+  color: #0e0e0e;
+  transform: rotate(0);
+}
+
+@media only screen and (max-width: 1199px) {
+  .techwix-choose-us-section-02 {
+    padding-bottom: 350px;
+  }
+  .techwix-choose-us-section-02 .choose-us-left {
+    padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .techwix-choose-us-section-02 {
+    padding-bottom: 330px;
+  }
+  .techwix-choose-us-section-02 .choose-us-right {
+    padding-left: 0;
+    padding-top: 15px;
+  }
+}
+
+.choose-us-item-02 {
+  background: var(--component);
+  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  padding: 40px 45px 40px;
+  margin-top: 30px;
+  position: relative;
+  height: 340px;
+  overflow: hidden;
+}
+
+.choose-us-item-02 .choose-us-img img {
+  transition: all 0.3s linear;
+}
+
+.choose-us-item-02 .choose-us-content .title {
+  font-size: 22px;
+  line-height: 30px;
+  margin-top: 20px;
+  color: var(--color);
+}
+
+.choose-us-item-02 .choose-us-content p {
+  font-size: 16px;
+  line-height: 30px;
+  padding: 20px 0;
+  color: var(--p);
+  overflow-y: scroll;
+}
+
+.choose-us-item-02:hover .choose-us-img img {
+  transform: scale(0.9);
+}
+
+.techwix-choose-us-section-03 {
+  background: #ffffff;
+  padding-top: 120px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .techwix-choose-us-section-03 {
+    padding-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .techwix-choose-us-section-03 {
+    padding-top: 80px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .techwix-choose-us-section-03 {
+    padding-top: 60px;
+  }
+}
+
+.techwix-choose-us-section-04 {
+  background: #ffffff;
+  padding-top: 120px;
+}
+
+.techwix-choose-us-section-04 .choose-us-wrap {
+  margin-top: -30px;
+}
+
+.techwix-choose-us-section-04 .choose-us-content-wrap {
+  padding-top: 0;
+}
+
+.techwix-choose-us-section-04 .choose-us-item-02 {
+  border: 1px solid #e1e1e1;
+  box-shadow: none;
+}
+
+/*--
+/*  13 - Team CSS
+/*----------------------------------------*/
+
+#heading, #heading0 {
+    color: #ffffff;
+  }
+  
+  .card {
+    background: var(--card-payment);
+      padding-top: 0px;
+      cursor: pointer;
+      border-radius: 10px !important;
+  }
+  
+  .card-name {
+    color: var(--color);
+  }
+ 
+  
+  .hex-icon {
+    background-color: black;
+    width: 30%;
+  }
+  
+  .fa {
+    color: white;
+    background-color: black;
+    width: 40px;
+    transition: 0.2s;
+  }
+  
+  .fa:hover {
+    opacity: 1;
+    transition: 0.2s;
+  }
+  
+  .team .fa-facebook-f {
+    background-color: #4267B2;
+    opacity: 0.8;
+    color: #EEE;
+    border-radius: 10px;
+  }
+  
+  .team .fa-twitter {
+    background-color: #1DA1F2;
+    opacity: 0.8;
+    color: #EEE;
+    border-radius: 10px;
+  }
+  
+  .team .fa-linkedin {
+    background-color: #0077B5;
+    opacity: 0.8;
+    color: #EEE;
+    border-radius: 10px;
+  }
+  
+  .team .fa-whatsapp {
+    background-color: #E60023;
+    opacity: 0.8;
+    color: #EEE;
+    border-radius: 10px;
+  }
+  
+  svg {
+    height: 200px;
+    width: 240px;
+  }

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html data-theme="lightMode" lang="en" id="direction" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="asstesClient/imag/M-.png">
+    <!--  Bootstrap v4.6.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- aos 2.3.1 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- fonts -->
+    <link rel="stylesheet" href="asstesClient/fonts/Droid.Arabic.Kufi_DownloadSoftware.iR_.ttf">
+    <link rel="stylesheet" href="asstesClient/fonts/centric-space-centric-space-svg-400.otf">
+
+    <!--  font Awesome -->
+    <link href="asstesClient/fonts/all.min.css" rel="stylesheet">
+
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="asstesClient/css/all.min.css">
+
+    <!--  Style css -->
+    <link href="asstesClient/css/shared.css" rel="stylesheet">
+    <link href="asstesClient/css/privacy-policy.css" rel="stylesheet">
+    <title>Masar Groub</title>
+
+</head>
+
+<body>
+
+    <!--=============== LOADING ===============-->
+    <section dir="ltr" id="loadingOverlay" class="loading-up">
+        <div class='loader loader1'>
+            <div>
+                <div>
+                    <div>
+                        <div>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--=============== SIDEBAR ===============-->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-container">
+           <div class="logo d-flex justify-content-between align-items-center">
+            <span class="toggle-sidebar"><i class="fa-solid fa-arrow-left fa-sm"></i></span>    
+                <img src="asstesClient/imag/Masar.png" alt="" class="sidebar__logo-text">
+           </div>
+
+           <div class="sidebar-content">
+              <div class="sidebar-list">
+                <a href="#" class="sidebar-link active-link">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="sidebar-link-name" data-i18n="Home"></span>
+                 </a>
+
+                 <a href="service.html" class="sidebar-link">
+                    <i class="fa-solid fa-hand-holding-heart"></i>
+                    <span class="sidebar-link-name" data-i18n="Services"></span>
+                 </a>
+                 
+                 <a href="#" class="sidebar-link">
+                    <i class="fa-solid fa-coins"></i>
+                    <span class="sidebar-link-name" data-i18n="Payment"></span>
+                 </a>
+
+                 <a href="#" class="sidebar-link">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <span class="sidebar-link-name" data-i18n="About"></span>
+                 </a>
+
+                 <a href="#" class="sidebar-link">
+                    <i class="fa-solid fa-square-phone"></i>
+                    <span class="sidebar-link-name" data-i18n="contact"></span>
+                 </a>
+              </div>
+
+              <h3 class="sidebar-title">
+                 <span data-i18n="General"></span>
+              </h3>
+
+              <div class="sidebar-list">
+                 <a href="#" class="sidebar-link">
+                    <i class="fa-solid fa-lock"></i>
+                    <span class="sidebar-link-name" data-i18n="Privacy"></span>
+                 </a>
+
+                 <a href="#" class="sidebar-link">
+                    <i class="fa-solid fa-gear"></i>
+                    <span class="sidebar-link-name" data-i18n="Settings"></span>
+                 </a>
+
+                 <a href="#" class="sidebar-link">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <span class="sidebar-link-name" data-i18n="Logout"></span>
+                 </a>
+              </div>
+           </div>
+
+           <div class="sidebar-account">
+              <img src="asstesClient/imag/user.png" alt="sidebar image" class="sidebar-perfil">
+
+              <div class="sidebar-names">
+                 <h3 class="sidebar-name">Will Lens</h3>
+                 <span class="sidebar-email">willens@email.com</span>
+              </div>
+
+              <i class="ri-arrow-right-s-line"></i>
+           </div>
+        </div>
+    </aside>
+     
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="rowNav">
+                <!-- logo -->
+                <a href="index.html" class="logo">
+                    <img src="asstesClient/imag/Masar.png" alt="">
+                </a>
+                <!-- content nav -->
+                <ul class="item-nav d-none d-lg-flex">
+                    <li><a href="index.html" data-i18n="Home">Home</a></li>
+                    <li><a href="payment.html" data-i18n="Payment">Payment</a></li>
+                    <li><a href="about-us.html" data-i18n="About">About Us</a></li>
+                    <li><a href="contact-us.html" data-i18n="contact">Contact</a></li>
+                    <li><a class="activeNavBar" href="privacy-policy.html" data-i18n="Privacy">Privacy Policy</a></li>
+                    <li class="position-relative">
+                        <a class="m-0 p-0" href="admin/index3.html" data-i18n="Admin">Admin</a> <i
+                            class="fa-light fa-chevron-down fa-xs"></i>
+                        <div class="dropdownList">
+                            <a href="admin/index3.html" data-i18n="Dashbord">Dashbord</a>
+                            <a href="profile.html" data-i18n="Profile">Profile</a>
+                            <a href="contact-us.html" data-i18n="contact">Contact</a>
+                            <a href="privacy-policy.html" data-i18n="Privacy">Privacy policy</a>
+                            <a href="about.html" data-i18n="About">About-Us</a>
+                            <a href="payment.html" data-i18n="Pricing">Pricing plans</a>
+                        </div>
+                    </li>
+                </ul>
+                <!-- icons -->
+                <div class="iconsnav">
+                    <div class=" d-flex">
+                        <div class="nav-item dropdown">
+                            <button class="dropdown-toggle" type="button" id="languageDropdown" data-i18n="lang" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> en </button>
+                            <div class="dropdown-menu" id="lang" aria-labelledby="languageDropdown">
+                                <button class="dropdown-item toggleTyped" onclick="changeLanguage('en')">English</button>
+                                <button class="dropdown-item toggleTyped" onclick="changeLanguage('ar')">العربية</button>
+                            </div>
+                        </div>
+                        <button class="icon themeicons mx-3">
+                            <i class="fa-light fa-lightbulb fa-lg themeicon btnLight"></i>
+                            <i class="fa-light fa-moon fa-lg themeicon d-none"></i>
+                        </button>
+                        <button class="toggle-sidebar d-lg-none ml-4 p-0">
+                            <i class="fa-light fa-bars-staggered fa-lg"></i>
+                        </button>
+                    </div>
+                    <!-- toogle Sign in Sign up -->
+                    <!-- <a class="signIn" href="login.html">Sign in</a> -->
+                    <!-- <a class="signUp" href="login.html">Sign Up</a> -->
+
+                    <!-- user -->
+                    <a class="icon nav-user d-none d-lg-flex" href="login.html">
+                        <span class="mx-2">hady rabie</span>
+                        <img src="asstesClient/imag/user.png" alt="user">
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End  -->
+
+    <!-- Start Header -->
+    <header>
+        <div class="container text-center">
+            <h1>سياسة الخصوصية</h1>
+        </div>
+    </header>
+    <!-- end -->
+
+    <!-- Start -->  
+    <div>
+        <div class="container text-justify mb-5">
+            <span class="h5 font-weight-bold text-justify text-color">المعلومات الشخصية</span>
+            <p class="mt-3 text-justify text-p" style="font-size: 16px;">نجمع معلومات شخصية منك عندما تقوم بتسجيل حساب أو تقديم طلب لخدماتنا. هذه المعلومات تشمل:</p>
+            <p class="mt-3 text-justify" style="font-size: 16px;">
+                <ul class=" text-p">
+                    <li>1- الاسم الكامل</li>
+                    <li>2- البريد الإلكتروني</li>
+                    <li>3- رقم الهاتف</li>
+                    <li>4- عنوان السكن</li>
+                </ul>
+            </p>
+        </div>
+        
+        <div class="container text-justify mb-5">
+            <span class="h5 font-weight-bold text-justify  text-color">تغييرات في سياسة الخصوصية </span>
+            <p class="mt-3 text-justify  text-p" style="font-size: 16px;">قد نقوم بتحديث سياسة الخصوصية هذه بشكل دوري لتعكس التغييرات في خدماتنا أو لأي أغراض أخرى. سنقوم بنشر أية تغييرات هامة هنا.</p>
+        </div>
+        <div class="container text-justify mb-5">
+            <span class="h5 font-weight-bold text-justify  text-color">معلومات غير شخصية</span>
+            <p class="mt-3 text-justify  text-p" style="font-size: 16px;">نجمع أيضًا معلومات غير شخصية، مثل بيانات الاستخدام ومعلومات الجهاز، باستخدام تقنيات تحليل الويب. هذه المعلومات تساعدنا في فهم كيفية استخدام المستخدمين لموقعنا وتحسين تجربتهم.</p>
+        </div>
+        
+        <div class="container text-justify mb-5">
+            <span class="h5 font-weight-bold text-justify  text-color"> 1- تقديم الخدمات </span>
+            <p class="mt-3 text-justify  text-p" style="font-size: 16px;">نستخدم معلوماتك الشخصية لتقديم وتحسين خدماتنا، وتخصيص تجربتك على الموقع.</p>
+        </div>
+    
+        <div class="container text-justify mb-5">
+            <span class="h5 font-weight-bold text-justify  text-color">2- التواصل</span>
+            <p class="mt-3 text-justify  text-p" style="font-size: 16px;">قد نستخدم معلوماتك للتواصل معك بخصوص حسابك، تحديثات الخدمات، أو استفسارات حول طلبك.</p>
+        </div>
+    
+        <div class="container text-justify mb-5">
+            <span class="h5 font-weight-bold text-justify  text-color">3- تحسين وتخصيص الإعلانات</span>
+            <p class="mt-3 text-justify  text-p" style="font-size: 16px;">نستخدم معلوماتك لتحسين فعالية الإعلانات وتقديم إعلانات مخصصة لاحتياجاتك.</p>
+        </div>
+    
+        <div class="container text-justify mb-5">
+            <span class="h5 font-weight-bold text-justify  text-color">مشاركة المعلومات مع أطراف ثالثة</span>
+            <p class="mt-3 text-justify  text-p" style="font-size: 16px;">نحن لا نشارك معلوماتك الشخصية مع أطراف ثالثة بدون موافقتك، باستثناء الحالات التي تتطلبها القوانين أو لحماية حقوقنا وسلامة المستخدمين.</p>
+        </div>
+        
+    
+        <div class="container text-justify mb-5">
+            <span class="h5 font-weight-bold text-justify  text-color">حماية معلوماتك </span>
+            <p class="mt-3 text-justify  text-p" style="font-size: 16px;">نحن نتخذ إجراءات أمان ملائمة لحماية معلوماتك. ومع ذلك، لا يمكن ضمان أمان معلوماتك بنسبة 100٪، وننصح باتخاذ تدابير الحماية الشخصية عند استخدام الإنترنت.</p>
+        </div>
+    
+        <div class="container text-justify mb-5">
+            <span class="h5 font-weight-bold text-justify  text-color"> حقوق الخصوصية </span>
+            <p class="mt-3 text-justify  text-p" style="font-size: 16px;">لديك حقوق بخصوص معلوماتك الشخصية، بما في ذلك الوصول إليها وتحديثها وحذفها. يمكنك ممارسة هذه الحقوق عند الحاجة.</p>
+        </div>
+        
+        <span style="font-size: 20px;" class="d-block p-5 bg-primary text-white text-left h5">
+            <div class="container">
+            <ul class="list-unstyled">
+                <li class="media" class="media" style="margin-bottom: 35px; top: 15px; position: relative;">
+                    <div style="font-size: 16px; "class="media-body">
+                        <h5 style="font-weight: 700; font-size: 18px;" class="mt-0 mb-4">كيفية التواصل معنا</h5>
+                        <p>إذا كان لديك أي أسئلة حول سياسة الخصوصية، يرجى التواصل معنا عبر البريد الإلكتروني: [ <a href="#">masar@gmail.com</a> ]</p>
+                    </div>
+                </li>
+                <li class="media" style="margin-bottom: 35px; top: 15px; position: relative;">
+                    <div style="font-size: 16px" class="media-body">
+                        <p>نتطلع إلى تقديم تجربة فريدة وآمنة لكم شكرًا لاختيارك [ <a href="index.html">Masar_Groub</a> ]</p>
+                    </div>
+                </li>
+                
+            </ul>
+            </div>
+        </span>
+    </div>
+    
+
+    <!-- Footer Section Start -->
+    <footer class="section footer-section footer-section-03 ">
+
+        <div class="container">
+            <!-- Footer Widget Wrap Start -->
+            <div class="footer-widget-wrap">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <!-- Footer Widget Start -->
+                        <div class="footer-widget-about">
+                            <a class="logo" href="index.html"><img src="asstesClient/imag/Masar.png" alt="Logo"></a>
+                            <p>Accelerate innovation with world-class tech teams We’ll match you to an entire remote team of incredible freelance talent.</p>
+                            <div class="footer-social">
+                                <ul class="social">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Footer Widget End -->
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <!-- Footer Widget Start -->
+                        <div class="footer-widget">
+                            <h4 class="footer-widget-title">Useful Links</h4>
+
+                            <div class="widget-link">
+                                <ul class="link">
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                    <li><a href="#">About Company</a></li>
+                                    <li><a href="#">Payment Gatway</a></li>
+                                    <li><a href="#">Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Footer Widget End -->
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <!-- Footer Widget Start -->
+                        <div class="footer-widget">
+                            <h4 class="footer-widget-title">Our Services</h4>
+
+                            <div class="widget-link">
+                                <ul class="link">
+                                    <li><a href="#">Marketing</a></li>
+                                    <li><a href="#">Website</a></li>
+                                    <li><a href="#">videos</a></li>
+                                    <li><a href="#">Photographers</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Footer Widget End -->
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <!-- Footer Widget Start -->
+                        <div class="footer-widget">
+                            <h4 class="footer-widget-title">Contact Information</h4>
+
+                            <div class="widget-info">
+                                <ul>
+                                    <li>
+                                        <div class="info-icon">
+                                            <i class="fa-solid fa-phone"></i>
+                                        </div>
+                                        <div class="info-text">
+                                            <span><a href="#">+20 1030804922</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="info-icon">
+                                            <i class="fa-solid fa-envelope"></i>
+                                        </div>
+                                        <div class="info-text">
+                                            <span> <a href="#"> masargroup@gmail.com</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="info-icon">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                        </div>
+                                        <div class="info-text">
+                                            <span data-i18n="Address-p"></span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Footer Widget End -->
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Widget Wrap End -->
+        </div>
+
+        <!-- Footer Copyright Start -->
+        <div class="footer-copyright-area">
+            <div class="container">
+                <div class="footer-copyright-wrap">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <!-- Footer Copyright Text Start -->
+                            <div class="copyright-text text-center">
+                                <p>© Copyrights 2023 Masar_Groub All rights reserved. </p>
+                            </div>
+                            <!-- Footer Copyright Text End -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Copyright End -->
+    </footer>
+    <!-- Footer Section End -->
+
+    
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <!--  fonts -->
+    <script src="asstesClient/fonts/all.min.js"></script>
+    <script src="asstesClient/fonts/Oswald-VariableFont_wght.ttf"></script>
+    <script src="asstesClient/fonts/Raleway-VariableFont_wght.ttf"></script>
+
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/i18next@22.4.6/dist/umd/i18next.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Js Index Java Script -->
+    <script src="asstesClient/js/translate-home.js"></script>
+    <script src="asstesClient/js/shared.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

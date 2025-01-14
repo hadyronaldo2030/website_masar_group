@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AdminLTE 3 | Simple Tables</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/rtl_style.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Messages Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-comments"></i>
+          <span class="badge badge-danger navbar-badge">3</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Brad Diesel
+                  <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">Call me whenever you can...</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  John Pierce
+                  <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">I got your message bro</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Nora Silvester
+                  <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">The subject goes here</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+        </div>
+      </li>
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-warning navbar-badge">15</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">15 Notifications</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> 4 new messages
+            <span class="float-right text-muted text-sm">3 mins</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-users mr-2"></i> 8 friend requests
+            <span class="float-right text-muted text-sm">12 hours</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-file mr-2"></i> 3 new reports
+            <span class="float-right text-muted text-sm">2 days</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#"><i
+            class="fas fa-th-large"></i></a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index3.html" class="brand-link">
+      <img src="../../dist/img/Masar.png" alt="AdminLTE Logo" class="brand-image">
+      <span class="brand-text font-weight-light" style="opacity: 0;">.</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="../../dist/img/user1-128x128.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Alexander Pierce</a>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                لوحة التحكم
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="./index3.html" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>لوحة التحكم</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-header">المحتويات</li>
+          <li class="nav-item has-treeview menu-open">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-book"></i>
+              <p>
+                الصفحات
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../examples/home.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>الرئيسية</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../examples/payment.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>انشاء خطط</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../examples/service.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>انشاء الخدمات</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../examples/users.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>العملاء</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./showServices.html" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>عرض الخدمات</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./support.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>الدعم</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./timeline.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>متابعة الخطط</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>جدول البيانات </h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">الرئيسية</a></li>
+              <li class="breadcrumb-item active">صفحة عرض الخدمات</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <!-- video -->
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">جدول الفيديوهات</h3>
+
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                    <i class="fas fa-minus"></i></button>
+                </div>
+              </div>
+              <!-- /.card-header -->
+              <form class="card-body">
+                <table class="table table-bordered">
+                  <thead>                  
+                    <tr>
+                      <th style="width: 10px">ID</th>
+                      <th>عنوان</th>
+                      <th class="d-none d-lg-block">الوصف الفيديو</th>
+                      <th>حدث</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1.</td>
+                      <td>فيديو تسويقى</td>
+                      <td class="d-none d-lg-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, velit praesentium aspernatur dolore exercitationem porro doloremque modi natus ratione reprehenderit non unde minus sunt officia perspiciatis voluptate fugiat recusandae a!</td>
+                      <td>
+                        <div class="btn-group btn-group-sm">
+                          <!-- delete -->
+                          <button class="btn btn-danger">
+                            <i class="fas fa-trash"></i>
+                          </button>
+                          <!-- Edit -->
+                          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-video">
+                            <i class="fas fa-pen"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </form>
+            </div>
+            <!-- /.card -->
+
+          </div>
+          <!-- /.col -->
+          <div class="col-md-6">
+            <!-- programming -->
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">جدول المشاريع البرمجية</h3>
+                
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                    <i class="fas fa-minus"></i></button>
+                </div>
+              </div>
+              <!-- /.card-header -->
+              <form class="card-body">
+                <table class="table table-bordered">
+                  <thead>                  
+                    <tr>
+                      <th style="width: 10px">ID</th>
+                      <th> عنوان</th>
+                      <th class="d-none d-lg-block">الوصف المشروع</th>
+                      <th>حدث</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1.</td>
+                      <td>فيديو تسويقى</td>
+                      <td class="d-none d-lg-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, velit praesentium aspernatur dolore exercitationem porro doloremque modi natus ratione reprehenderit non unde minus sunt officia perspiciatis voluptate fugiat recusandae a!</td>
+                      <td>
+                        <div class="btn-group btn-group-sm">
+                          <!-- delete -->
+                          <button class="btn btn-danger">
+                            <i class="fas fa-trash"></i>
+                          </button>
+                          <!-- Edit -->
+                          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-programming">
+                            <i class="fas fa-pen"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </form>
+            </div>
+            <!-- /.card -->
+
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">معرض الصور</h3>
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse"> <i class="fas fa-minus"></i></button>
+                </div>
+              </div>
+              <!-- photography -->
+              <div class="psm-0 card-body">
+                <div id="photography">
+                  <div class="gallary ">
+                    <span class="horizontal minImg">
+                      <label for="file-upload1" class="custom-upload-button"><i class="fas fa-pen"></i></label>
+                      <input type="file" id="file-upload1" name="image" class="file-upload">
+                      <img src="https://images.unsplash.com/photo-1506252374453-ef5237291d83?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80" alt="1">
+                      <div class="delete-button"><i class="fas fa-trash"></i></div>
+                    </span>
+                    <span class="vertical minImg">
+                      <label for="file-upload2" class="custom-upload-button"><i class="fas fa-pen"></i></label>
+                      <input type="file" id="file-upload2" name="image" class="file-upload">
+                      <img src="https://images.unsplash.com/photo-1536273176101-b3810e5cb3c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80" alt="2">
+                      <div class="delete-button"><i class="fas fa-trash"></i></div>
+                    </span>
+                    <span class="horizontal minImg">
+                      <label for="file-upload3" class="custom-upload-button"><i class="fas fa-pen"></i></label>
+                      <input type="file" id="file-upload3" name="image" class="file-upload">
+                      <img src="https://images.unsplash.com/photo-1524546101258-e99b0826ea9c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1936&q=80" alt="3">
+                      <div class="delete-button"><i class="fas fa-trash"></i></div>
+                    </span>
+                    <span class="big minImg">
+                      <label for="file-upload4" class="custom-upload-button"><i class="fas fa-pen"></i></label>
+                      <input type="file" id="file-upload4" name="image" class="file-upload">
+                      <img src="https://images.unsplash.com/photo-1486239154832-a989a601c41d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="4">
+                      <div class="delete-button"><i class="fas fa-trash"></i></div>
+                    </span>
+                    <span class="vertical minImg">
+                      <label for="file-upload5" class="custom-upload-button"><i class="fas fa-pen"></i></label>
+                      <input type="file" id="file-upload5" name="image" class="file-upload">
+                      <img src="" alt="">
+                      <div class="delete-button"><i class="fas fa-trash"></i></div>
+                      <img src="https://images.unsplash.com/photo-1519458524098-335b2a5747b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="5">
+                    </span>
+                    <span class="vertical minImg">
+                      <label for="file-upload6" class="custom-upload-button"><i class="fas fa-pen"></i></label>
+                      <input type="file" id="file-upload6" name="image" class="file-upload">
+                      <img src="" alt="">
+                      <div class="delete-button"><i class="fas fa-trash"></i></div>
+                      <img src="https://images.unsplash.com/photo-1548737787-a776beb45cfd?ixlib=rb-1.2.1&auto=format&fit=crop&w=701&q=80" alt="6">
+                    </span>
+                    <span class="vertical minImg">
+                      <label for="file-upload7" class="custom-upload-button"><i class="fas fa-pen"></i></label>
+                      <input type="file" id="file-upload7" name="image" class="file-upload">
+                      <img src="" alt="">
+                      <div class="delete-button"><i class="fas fa-trash"></i></div>
+                      <img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="7">
+                    </span>
+                    <span class="minImg">
+                      <label for="file-upload8" class="custom-upload-button"><i class="fas fa-pen"></i></label>
+                      <input type="file" id="file-upload8" name="image" class="file-upload">
+                      <img src="" alt="">
+                      <div class="delete-button"><i class="fas fa-trash"></i></div>
+                      <img src="https://images.unsplash.com/photo-1474218861938-d6b14818c8e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" alt="8">
+                    </span>
+                    <span class="minImg">
+                      <label for="file-upload9" class="custom-upload-button"><i class="fas fa-pen"></i></label>
+                      <input type="file" id="file-upload9" name="image" class="file-upload">
+                      <img src="" alt="">
+                      <div class="delete-button"><i class="fas fa-trash"></i></div>
+                      <img src="https://images.unsplash.com/photo-1502842113467-03fdcac39fe5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="8.1">
+                    </span>
+                    <span class="minImg">
+                      <label for="file-upload10" class="custom-upload-button"><i class="fas fa-pen"></i></label>
+                      <input type="file" id="file-upload10" name="image" class="file-upload">
+                      <img src="https://images.unsplash.com/photo-1548599042-0df640181771?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="9">
+                      <div class="delete-button"><i class="fas fa-trash"></i></div>
+                    </span>
+                    <span class="big minImg">
+                      <label for="file-upload11" class="custom-upload-button"><i class="fas fa-pen"></i></label>
+                      <input type="file" id="file-upload11" name="image" class="file-upload">
+                      <img src="https://images.unsplash.com/photo-1515405969538-5642ed9d0cc4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80" alt="10">
+                      <div class="delete-button"><i class="fas fa-trash"></i></div>
+                    </span>
+                    <span class="vertical minImg">
+                      <label for="file-upload12" class="custom-upload-button"><i class="fas fa-pen"></i></label>
+                      <input type="file" id="file-upload12" name="image" class="file-upload">
+                      <img src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=926&q=80" alt="11">
+                      <div class="delete-button"><i class="fas fa-trash"></i></div>
+                    </span>
+                    <span class="horizontal minImg">
+                      <label for="file-upload13" class="custom-upload-button"><i class="fas fa-pen"></i></label>
+                      <input type="file" id="file-upload13" name="image" class="file-upload">
+                      <img src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=926&q=80" alt="11">
+                      <div class="delete-button"><i class="fas fa-trash"></i></div>
+                    </span>
+                    <span class="vertical minImg">
+                      <label for="file-upload14" class="custom-upload-button"><i class="fas fa-pen"></i></label>
+                      <input type="file" id="file-upload14" name="image" class="file-upload">
+                      <img src="https://images.unsplash.com/photo-1514673309919-5998bbbadf7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=688&q=80" alt="12.1">
+                      <div class="delete-button"><i class="fas fa-trash"></i></div>
+                    </span>
+                    <span class="horizontal minImg">
+                      <label for="file-upload15" class="custom-upload-button"><i class="fas fa-pen"></i></label>
+                      <input type="file" id="file-upload15" name="image" class="file-upload">
+                      <img src="https://images.unsplash.com/photo-1543335785-8aadf6d8183c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" alt="13">
+                      <div class="delete-button"><i class="fas fa-trash"></i></div>
+                    </span>
+                  </div>
+              </div>
+              </div>
+            </div>
+            <!-- /.card -->
+          </div>
+        </div>
+        <!-- /.row -->
+        <div class="row">
+          <div class="col-md-6">
+            <!-- digital matketing -->
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">جدول التسويق الرقمى</h3>
+                
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                    <i class="fas fa-minus"></i></button>
+                </div>
+              </div>
+              <!-- /.card-header -->
+              <form class="card-body">
+                <table class="table table-bordered">
+                  <thead>                  
+                    <tr>
+                      <th style="width: 10px">ID</th>
+                      <th> العنوان </th>
+                      <th class="d-none d-lg-block">الوصف </th>
+                      <th>حدث</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1.</td>
+                      <td>test</td>
+                      <td class="d-none d-lg-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, velit praesentium aspernatur dolore exercitationem porro doloremque modi natus ratione reprehenderit non unde minus sunt officia perspiciatis voluptate fugiat recusandae a!</td>
+                      <td>
+                        <div class="btn-group btn-group-sm">
+                          <!-- delete -->
+                          <button class="btn btn-danger">
+                            <i class="fas fa-trash"></i>
+                          </button>
+                          <!-- Edit -->
+                          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-digital-matketing">
+                            <i class="fas fa-pen"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </form>
+            </div>
+            <!-- /.card -->
+            <!-- Affiliate matketing -->
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">جدول التسويق بالعمولة</h3>
+                
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                    <i class="fas fa-minus"></i></button>
+                </div>
+              </div>
+              <!-- /.card-header -->
+              <form class="card-body">
+                <table class="table table-bordered">
+                  <thead>                  
+                    <tr>
+                      <th style="width: 10px">ID</th>
+                      <th> العنوان </th>
+                      <th class="d-none d-lg-block">الوصف </th>
+                      <th>حدث</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1.</td>
+                      <td>test</td>
+                      <td class="d-none d-lg-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, velit praesentium aspernatur dolore exercitationem porro doloremque modi natus ratione reprehenderit non unde minus sunt officia perspiciatis voluptate fugiat recusandae a!</td>
+                      <td>
+                        <div class="btn-group btn-group-sm">
+                          <!-- delete -->
+                          <button class="btn btn-danger">
+                            <i class="fas fa-trash"></i>
+                          </button>
+                          <!-- Edit -->
+                          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-Affiliate-matketing">
+                            <i class="fas fa-pen"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </form>
+            </div>
+            <!-- /.card -->
+
+          </div>
+          <div class="col-md-6">
+            <!-- Digital Print -->
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">جدول الطباعة الرقمية</h3>
+                
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                    <i class="fas fa-minus"></i></button>
+                </div>
+              </div>
+              <!-- /.card-header -->
+              <form class="card-body">
+                <table class="table table-bordered">
+                  <thead>                  
+                    <tr>
+                      <th style="width: 10px">ID</th>
+                      <th> العنوان </th>
+                      <th class="d-none d-lg-block">الوصف </th>
+                      <th>حدث</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1.</td>
+                      <td>test</td>
+                      <td class="d-none d-lg-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, velit praesentium aspernatur dolore exercitationem porro doloremque modi natus ratione reprehenderit non unde minus sunt officia perspiciatis voluptate fugiat recusandae a!</td>
+                      <td>
+                        <div class="btn-group btn-group-sm">
+                          <!-- delete -->
+                          <button class="btn btn-danger">
+                            <i class="fas fa-trash"></i>
+                          </button>
+                          <!-- Edit -->
+                          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-digital-Print">
+                            <i class="fas fa-pen"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </form>
+            </div>
+            <!-- /.card -->
+            <!-- Real Estate Marketing -->
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">جدول التسويق العقارى</h3>
+                
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                    <i class="fas fa-minus"></i></button>
+                </div>
+              </div>
+              <!-- /.card-header -->
+              <form class="card-body">
+                <table class="table table-bordered">
+                  <thead>                  
+                    <tr>
+                      <th style="width: 10px">ID</th>
+                      <th> العنوان </th>
+                      <th class="d-none d-lg-block">الوصف </th>
+                      <th>حدث</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1.</td>
+                      <td>test</td>
+                      <td class="d-none d-lg-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, velit praesentium aspernatur dolore exercitationem porro doloremque modi natus ratione reprehenderit non unde minus sunt officia perspiciatis voluptate fugiat recusandae a!</td>
+                      <td>
+                        <div class="btn-group btn-group-sm">
+                          <!-- delete -->
+                          <button class="btn btn-danger">
+                            <i class="fas fa-trash"></i>
+                          </button>
+                          <!-- Edit -->
+                          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-Real-Estate-matketing">
+                            <i class="fas fa-pen"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </form>
+            </div>
+            <!-- /.card -->
+            
+
+          </div>
+          <div class="col-12">
+            <!-- Media Production -->
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">جدول الميديا الرقمية</h3>
+                
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                    <i class="fas fa-minus"></i></button>
+                </div>
+              </div>
+              <!-- /.card-header -->
+              <form class="card-body">
+                <table class="table table-bordered">
+                  <thead>                  
+                    <tr>
+                      <th style="width: 10px">ID</th>
+                      <th> العنوان </th>
+                      <th class="d-none d-lg-block">الوصف </th>
+                      <th>حدث</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1.</td>
+                      <td>test</td>
+                      <td class="d-none d-lg-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, velit praesentium aspernatur dolore exercitationem porro doloremque modi natus ratione reprehenderit non unde minus sunt officia perspiciatis voluptate fugiat recusandae a!</td>
+                      <td>
+                        <div class="btn-group btn-group-sm">
+                          <!-- delete -->
+                          <button class="btn btn-danger">
+                            <i class="fas fa-trash"></i>
+                          </button>
+                          <!-- Edit -->
+                          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-Media-Production">
+                            <i class="fas fa-pen"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </form>
+            </div>
+            <!-- /.card -->
+
+          </div>
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+
+  <!-- modal -->
+  <!-- Edit video -->
+  <div class="modal fade" id="modal-video">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">تعديل الفيديو</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!-- form start -->
+        <form role="form">
+          <div class="card-body">
+            <!-- upload video -->
+            <div class="form-group">
+              <label for="exampleInputFile">
+                استدعاء فيديو من جهازك
+              </label>
+              <div class="input-group">
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="exampleInputFile">
+                  <label class="custom-file-label" for="exampleInputFile">اضغط هنا للرفع</label>
+                </div>
+              </div>
+            </div>
+            <!-- upload link video -->
+            <div class="form-group">
+              <label for="linkVideo">او قم بأستدعاء رابط</label>
+              <input type="text" class="form-control" id="linkVideo" placeholder="ضع رابط هنا">
+            </div>
+            <!-- video title -->
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">عنوان الفيديو</span>
+              </div>
+              <input type="text" class="form-control">
+            </div>
+            <!-- video discription -->
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">وصف الفيديو</span>
+              </div>
+              <textarea class="form-control" name="" id="" cols="15" rows="5"></textarea>
+            </div>
+
+          </div>
+          <!-- /.card-body -->
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-default" data-dismiss="modal">اغلاق</button>
+            <button type="button" class="btn btn-primary">حفظ التعديلات</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Edit project programming -->
+  <div class="modal fade" id="modal-programming">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">تعديل مشروع برمجى</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!-- form start -->
+        <form role="form">
+          <div class="card-body">
+            <!-- upload img -->
+            <div class="form-group">
+              <label for="uploadUi">
+                استدعاء صورة من جهازك
+              </label>
+              <div class="input-group">
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="uploadUi">
+                  <label class="custom-file-label" for="uploadUi">اضغط هنا للرفع</label>
+                </div>
+              </div>
+            </div>
+            <!-- upload link img -->
+            <div class="form-group">
+              <label for="linkUI">او قم بأستدعاء رابط</label>
+              <input type="text" class="form-control" id="linkUI" placeholder="ضع رابط هنا">
+            </div>
+            <!-- project title -->
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">عنوان المشروع</span>
+              </div>
+              <input type="text" class="form-control">
+            </div>
+            <!-- type project -->
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">نوع المشروع</span>
+              </div>
+              <input type="text" class="form-control">
+            </div>
+
+          </div>
+          <!-- /.card-body -->
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-default" data-dismiss="modal">اغلاق</button>
+            <button type="button" class="btn btn-primary">حفظ التعديلات</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- /.modal -->
+
+  <!-- Edit marketiing -->
+
+  <!-- digital markrtting -->
+  <div class="modal fade" id="modal-digital-matketing">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">تعديل تسويق رقمى</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!-- form start -->
+        <form role="form">
+          <div class="card-body">
+            <!-- title -->
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">نوع الخدمة</span>
+              </div>
+              <input type="text" class="form-control">
+            </div>
+            <!-- discription -->
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">وصف الخدمة</span>
+              </div>
+              <textarea class="form-control" name="" id="" cols="15" rows="5"></textarea>
+            </div>
+          </div>
+          <!-- /.card-body -->
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-default" data-dismiss="modal">اغلاق</button>
+            <button type="button" class="btn btn-primary">حفظ التعديلات</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- /.modal -->
+
+  <!-- Affiliate markrtting -->
+  <div class="modal fade" id="modal-Affiliate-matketing">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">تعديل التسويق بالعمولة</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!-- form start -->
+        <form role="form">
+          <div class="card-body">
+            <!-- title -->
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">نوع الخدمة</span>
+              </div>
+              <input type="text" class="form-control">
+            </div>
+            <!-- discription -->
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">وصف الخدمة</span>
+              </div>
+              <textarea class="form-control" name="" id="" cols="15" rows="5"></textarea>
+            </div>
+          </div>
+          <!-- /.card-body -->
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-default" data-dismiss="modal">اغلاق</button>
+            <button type="button" class="btn btn-primary">حفظ التعديلات</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- /.modal -->
+
+  <!-- Affiliate markrtting -->
+  <div class="modal fade" id="modal-Affiliate-matketing">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">تعديل الطباعة الرقمية</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!-- form start -->
+        <form role="form">
+          <div class="card-body">
+            <!-- title -->
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">نوع الخدمة</span>
+              </div>
+              <input type="text" class="form-control">
+            </div>
+            <!-- discription -->
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">وصف الخدمة</span>
+              </div>
+              <textarea class="form-control" name="" id="" cols="15" rows="5"></textarea>
+            </div>
+          </div>
+          <!-- /.card-body -->
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-default" data-dismiss="modal">اغلاق</button>
+            <button type="button" class="btn btn-primary">حفظ التعديلات</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- /.modal -->
+
+  <!-- digital-Print -->
+  <div class="modal fade" id="modal-digital-Print">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">تعديل الطباعة الرقمية</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!-- form start -->
+        <form role="form">
+          <div class="card-body">
+            <!-- title -->
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">نوع الخدمة</span>
+              </div>
+              <input type="text" class="form-control">
+            </div>
+            <!-- discription -->
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">وصف الخدمة</span>
+              </div>
+              <textarea class="form-control" name="" id="" cols="15" rows="5"></textarea>
+            </div>
+          </div>
+          <!-- /.card-body -->
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-default" data-dismiss="modal">اغلاق</button>
+            <button type="button" class="btn btn-primary">حفظ التعديلات</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- /.modal -->
+
+  <!-- Real Estate matketing -->
+  <div class="modal fade" id="modal-Real-Estate-matketing">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">تعديل التسويق العقارى</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!-- form start -->
+        <form role="form">
+          <div class="card-body">
+            <!-- title -->
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">نوع الخدمة</span>
+              </div>
+              <input type="text" class="form-control">
+            </div>
+            <!-- discription -->
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">وصف الخدمة</span>
+              </div>
+              <textarea class="form-control" name="" id="" cols="15" rows="5"></textarea>
+            </div>
+          </div>
+          <!-- /.card-body -->
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-default" data-dismiss="modal">اغلاق</button>
+            <button type="button" class="btn btn-primary">حفظ التعديلات</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- /.modal -->
+
+  <!-- modal-Media-Production -->
+  <div class="modal fade" id="modal-Media-Production">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">تعديل الميديا الرقمية</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!-- form start -->
+        <form role="form">
+          <div class="card-body">
+            <!-- title -->
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">نوع الخدمة</span>
+              </div>
+              <input type="text" class="form-control">
+            </div>
+            <!-- discription -->
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">وصف الخدمة</span>
+              </div>
+              <textarea class="form-control" name="" id="" cols="15" rows="5"></textarea>
+            </div>
+          </div>
+          <!-- /.card-body -->
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-default" data-dismiss="modal">اغلاق</button>
+            <button type="button" class="btn btn-primary">حفظ التعديلات</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- /.modal -->
+
+
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong>&copy; جميع الحقوق محفوظه لدى <a href="#">Masar-Group 2024</a>.</strong>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
+
+<script>
+    // ============================== upload images2 ==============================
+    $(document).ready(function() {
+      $('.file-upload').change(function() {
+          var file = this.files[0];
+          var reader = new FileReader();
+          var minImg = $(this).closest('.minImg');
+
+          reader.onload = function() {
+              var img = minImg.find('img');
+              img.attr('src', reader.result);
+              img.css('display', 'block');
+              minImg.find('.delete-button').css('display', 'flex');
+          };
+
+          reader.readAsDataURL(file);
+      });
+
+      $('.delete-button').click(function() {
+          var minImg = $(this).closest('.minImg');
+          var img = minImg.find('img');
+          img.attr('src', '');
+          img.css('display', 'none');
+          var input = minImg.find('.file-upload');
+          input.val('');
+          $(this).css('display', 'none');
+      });
+  });
+</script>
+</body>
+</html>

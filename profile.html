@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html data-theme="lightMode" lang="en" id="direction" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="asstesClient/imag/M-.png">
+    <!--  Bootstrap v4.6.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--  owl.carousel v2.3.4 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- typed 5.0.12 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/dist/typed.min.css">
+    <!-- aos 2.3.1 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- devices -->
+    <link rel="stylesheet" type="text/css" href="asstesClient/css/devices.css">
+    <link href="https://vjs.zencdn.net/8.3.0/video-js.css" rel="stylesheet" />
+    <!-- video -->
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="asstesClient/fonts/Droid.Arabic.Kufi_DownloadSoftware.iR_.ttf">
+    <link rel="stylesheet" href="asstesClient/fonts/centric-space-centric-space-svg-400.otf">
+
+    <!--  font Awesome -->
+    <link href="asstesClient/fonts/all.min.css" rel="stylesheet">
+
+    <!--  Style css -->
+    <link href="asstesClient/css/shared.css" rel="stylesheet">
+    <link href="asstesClient/css/profile.css" rel="stylesheet">
+    <title>Masar Groub</title>
+</head>
+
+<body>
+
+
+    <!-- button support  -->
+    <div class="support">
+        <button data-bs-toggle="modal" data-bs-target="#alertSupport">
+            <i class="fa-solid fa-headset fa-2xl text-white"></i>
+        </button>
+    </div>
+    <!-- alert support -->
+    <div class="modal fade" id="alertSupport" tabindex="-1" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog">
+            <form class="alert-support modal-content popupWindow">
+                <div class="head-alert d-flex justify-content-between align-items-center">
+                    <h5 class="text-color">الدعم <i class="fa-solid fa-headset fa-sm"></i></h5>
+                    <button class="text-color btn-close-support" data-bs-dismiss="modal">
+                        <i class="text-color fa-solid fa-close fa-lg"></i>
+                    </button>
+                </div>
+                <div class="my-2">
+                    <input class="form-control" type="text" placeholder="نوع الاستفسار او المشكله">
+                </div>
+                <div class="my-2">
+                    <input class="form-control" type="number" maxlength="11" placeholder="اكتب رقم هاتفك للمتابعه">
+                </div>
+                <div class="my-2">
+                    <textarea class="form-control" name="" id="" cols="30" rows="10"
+                        placeholder="تفاصيل استفسارك او مشكلتك"></textarea>
+                </div>
+                <button class="my-2 btn btnGray"> send </button>
+            </form>
+        </div>
+    </div>
+    <!-- End  -->
+
+    <!-- alert rating -->
+    <div class="modal fade" id="alertRatingPlan" tabindex="-1" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog">
+            <form class="alert-support modal-content popupWindow">
+                <div class="head-alert d-flex justify-content-between align-items-center">
+                    <h4 class="text-color">تقييم الخدمة <i class="fa-solid fa-medal fa-sm"></i></i></h4>
+                    <button class="text-color btn-close-support" data-bs-dismiss="modal">
+                        <i class="text-color fa-solid fa-close fa-lg"></i>
+                    </button>
+                </div>
+                <div class="star-group">
+                    <input type="radio" class="star" id="one" name="star_rating">
+                    <input type="radio" class="star" id="two" name="star_rating">
+                    <input type="radio" class="star" id="three" name="star_rating">
+                    <input type="radio" class="star" id="four" name="star_rating">
+                    <input type="radio" class="star" id="five" name="star_rating">
+                </div>
+                <div class="my-2">
+                    <textarea class="form-control" name="" id="" cols="30" rows="10"
+                        placeholder="اكتب تعليق على الخدمه"></textarea>
+                </div>
+                <button class="my-2 btn btnGray"> send </button>
+            </form>
+        </div>
+    </div>
+    <!-- End  -->
+
+
+    <!--=============== LOADING ===============-->
+    <section dir="ltr" id="loadingOverlay" class="loading-up">
+        <div class='loader loader1'>
+            <div>
+                <div>
+                    <div>
+                        <div>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--=============== SIDEBAR ===============-->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-container">
+           <div class="logo d-flex justify-content-between align-items-center">
+            <span class="toggle-sidebar"><i class="fa-solid fa-arrow-left fa-sm"></i></span>    
+                <img src="asstesClient/imag/Masar.png" alt="" class="sidebar__logo-text">
+           </div>
+
+           <div class="sidebar-content">
+              <div class="sidebar-list">
+                <a href="#" class="sidebar-link active-link">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="sidebar-link-name" data-i18n="Home"></span>
+                 </a>
+
+                 <a href="service.html" class="sidebar-link">
+                    <i class="fa-solid fa-hand-holding-heart"></i>
+                    <span class="sidebar-link-name" data-i18n="Services"></span>
+                 </a>
+                 
+                 <a href="#" class="sidebar-link">
+                    <i class="fa-solid fa-coins"></i>
+                    <span class="sidebar-link-name" data-i18n="Payment"></span>
+                 </a>
+
+                 <a href="#" class="sidebar-link">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <span class="sidebar-link-name" data-i18n="About"></span>
+                 </a>
+
+                 <a href="#" class="sidebar-link">
+                    <i class="fa-solid fa-square-phone"></i>
+                    <span class="sidebar-link-name" data-i18n="contact"></span>
+                 </a>
+              </div>
+
+              <h3 class="sidebar-title">
+                 <span data-i18n="General"></span>
+              </h3>
+
+              <div class="sidebar-list">
+                 <a href="#" class="sidebar-link">
+                    <i class="fa-solid fa-lock"></i>
+                    <span class="sidebar-link-name" data-i18n="Privacy"></span>
+                 </a>
+
+                 <a href="#" class="sidebar-link">
+                    <i class="fa-solid fa-gear"></i>
+                    <span class="sidebar-link-name" data-i18n="Settings"></span>
+                 </a>
+
+                 <a href="#" class="sidebar-link">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <span class="sidebar-link-name" data-i18n="Logout"></span>
+                 </a>
+              </div>
+           </div>
+
+           <div class="sidebar-account">
+              <img src="asstesClient/imag/user.png" alt="sidebar image" class="sidebar-perfil">
+
+              <div class="sidebar-names">
+                 <h3 class="sidebar-name">Will Lens</h3>
+                 <span class="sidebar-email">willens@email.com</span>
+              </div>
+
+              <i class="ri-arrow-right-s-line"></i>
+           </div>
+        </div>
+    </aside>
+     
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="rowNav">
+                <!-- logo -->
+                <a href="index.html" class="logo">
+                    <img src="asstesClient/imag/Masar.png" alt="">
+                </a>
+                <!-- content nav -->
+                <ul class="item-nav d-none d-lg-flex">
+                    <li><a href="index.html" data-i18n="Home">Home</a></li>
+                    <li><a href="payment.html" data-i18n="Payment">Payment</a></li>
+                    <li><a href="about-us.html" data-i18n="About">About Us</a></li>
+                    <li><a href="contact-us.html" data-i18n="contact">Contact</a></li>
+                    <li><a href="privacy-policy.html" data-i18n="Privacy">Privacy Policy</a></li>
+                    <li class="position-relative">
+                        <a class="m-0 p-0" href="admin/index3.html" data-i18n="Admin">Admin</a> <i
+                            class="fa-light fa-chevron-down fa-xs"></i>
+                        <div class="dropdownList">
+                            <a href="admin/index3.html" data-i18n="Dashbord">Dashbord</a>
+                            <a href="profile.html" data-i18n="Profile">Profile</a>
+                            <a href="contact-us.html" data-i18n="contact">Contact</a>
+                            <a href="privacy-policy.html" data-i18n="Privacy">Privacy policy</a>
+                            <a href="about.html" data-i18n="About">About-Us</a>
+                            <a href="payment.html" data-i18n="Pricing">Pricing plans</a>
+                        </div>
+                    </li>
+                </ul>
+                <!-- icons -->
+                <div class="iconsnav">
+                    <div class=" d-flex">
+                        <div class="nav-item dropdown">
+                            <button class="dropdown-toggle" type="button" id="languageDropdown" data-i18n="lang" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> en </button>
+                            <div class="dropdown-menu" id="lang" aria-labelledby="languageDropdown">
+                                <button class="dropdown-item toggleTyped" onclick="changeLanguage('en')">English</button>
+                                <button class="dropdown-item toggleTyped" onclick="changeLanguage('ar')">العربية</button>
+                            </div>
+                        </div>
+                        <button class="icon themeicons mx-3">
+                            <i class="fa-light fa-lightbulb fa-lg themeicon btnLight"></i>
+                            <i class="fa-light fa-moon fa-lg themeicon d-none"></i>
+                        </button>
+                        <button class="toggle-sidebar d-lg-none ml-4 p-0">
+                            <i class="fa-light fa-bars-staggered fa-lg"></i>
+                        </button>
+                    </div>
+                    <!-- toogle Sign in Sign up -->
+                    <!-- <a class="signIn" href="login.html">Sign in</a> -->
+                    <!-- <a class="signUp" href="login.html">Sign Up</a> -->
+
+                    <!-- user -->
+                    <a class="icon nav-user d-none d-lg-flex" href="login.html">
+                        <span class="mx-2">hady rabie</span>
+                        <img src="asstesClient/imag/user.png" alt="user">
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End  -->
+
+    <!-- Start Header -->
+    <header>
+        <div class="container">
+            <div class="profile-user">
+                <div class="profile-avatar">
+                    <label for="form-img-upload" class="btn-Camera">
+                        <i class="fa-solid fa-camera-retro fa-xl"></i>
+                    </label>
+                    <input id="form-img-upload" name="form-img-upload" type="file" accept=".png, .jpg, .jpeg"
+                        style="display: none;">
+                    <img id="form-img" src="asstesClient/imag/defult image.png" alt="">
+                </div>
+                <div class="user-name mx-3 mt-3">
+                    <h3>Hady Rabie</h3>
+                    <span>ID : #<span>1152</span> </span>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- end -->
+
+    <!-- Personal Details -->
+    <div class="personal-details">
+        <div class="container profile-nav">
+            <ul dir="ltr" class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item first" role="presentation">
+                    <button class="nav-link active" id="Profile-tab" data-bs-toggle="tab" data-bs-target="#Profile">
+                        Profile
+                    </button>
+                </li>
+                <li class="nav-item between" role="presentation">
+                    <button class="nav-link" id="Subscription-tab" data-bs-toggle="tab" data-bs-target="#Subscription">
+                        Subscription
+                    </button>
+                </li>
+                <li class="nav-item last" role="presentation">
+                    <button class="nav-link" id="TimeLine-tab" data-bs-toggle="tab" data-bs-target="#TimeLine">
+                        TimeLine
+                    </button>
+                </li>
+
+            </ul>
+
+            <div class="tab-content" id="myTabContent">
+                <!-- Profile -->
+                <div class="tab-pane fade show active" id="Profile" role="tabpanel" aria-labelledby="Profile-tab">
+                    <div class="profile">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 col-sm-12 bg-component p-3">
+                                <section class="title-scroll" data-aos="fade-up" data-aos-duration="2000">
+                                    <h1> profile</h1>
+                                </section>
+                                <form class="row g-3 my-3" id="profile-form">
+                                    <div class="col-md-6">
+                                        <label for="inputEmail4" class="form-label text-color">First Name</label>
+                                        <input type="text" class="form-control" id="inputEmail4">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputEmail4" class="form-label text-color">Last Name</label>
+                                        <input type="text" class="form-control" id="inputEmail4">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputEmail4" class="form-label text-color">Email</label>
+                                        <input type="email" class="form-control" id="inputEmail4">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputPassword4" class="form-label text-color">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword4">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="inputAddress" class="form-label text-color">Address</label>
+                                        <input type="text" class="form-control" id="inputAddress">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputCity" class="form-label text-color">City</label>
+                                        <input type="text" class="form-control" id="inputCity">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputCity" class="form-label text-color">Birth</label>
+                                        <input type="date" class="form-control" id="inputCity">
+                                    </div>
+                                    <div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio1" value="option1">
+                                            <label class="form-check-label text-color" for="inlineRadio1">male</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio2" value="option2">
+                                            <label class="form-check-label text-color" for="inlineRadio2">femal</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btnGray" id="updateBtn"
+                                            style="display: none;">update</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- TimeLine -->
+                <div class="tab-pane fade" id="TimeLine" role="tabpanel" aria-labelledby="TimeLine-tab">
+                    <div class="headTimeline">
+                        <section class="title-scroll" data-aos="fade-up" data-aos-duration="2000">
+                            <h1> Timeline</h1>
+                        </section>
+                        <div class="timeline">
+                            <div class="timeline-month">
+                                August, 2018
+                            </div>
+                            <div class="timeline-section">
+                                <div class="timeline-date">
+                                    21, Tuesday
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="timeline-box">
+                                            <div class="box-title">
+                                                 Job
+                                                Created
+                                            </div>
+                                            <div class="box-content">
+                                                <a class="btn px-0">Details</a>
+                                                <div class="box-item"><strong>Loss Type</strong>: A/C Leak</div>
+                                                <div class="box-item"><strong>Loss Territory</strong>: Texas</div>
+                                                <div class="box-item"><strong>Start Date</strong>: 08/22/2018</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="timeline-box">
+                                            <div class="box-title">
+                                                 Job Edited
+                                            </div>
+                                            <div class="box-content">
+                                                <a class="btn px-0">Details</a>
+                                                <div class="box-item"><strong>Project Manager</strong>: Marlyn</div>
+                                                <div class="box-item"><strong>Supervisor</strong>: Carol</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="timeline-section">
+                                <div class="timeline-date">
+                                    22, Wednesday
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="timeline-box">
+                                            <div class="box-title">
+                                                 Job Edited
+                                            </div>
+                                            <div class="box-content">
+                                                <a class="btn px-0">Details</a>
+                                                <div class="box-item"><strong>Extraction Type</strong>: Carpet Heavy
+                                                </div>
+                                                <div class="box-item"><strong>Water Category</strong>: 4</div>
+                                                <div class="box-item"><strong>No. Of Tech</strong>: 6</div>
+                                                <div class="box-item"><strong>Est. Complation</strong>: 09/01/2018</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="timeline-box">
+                                            <div class="box-title">
+                                                 New Job To
+                                                Do
+                                            </div>
+                                            <div class="box-content">
+                                                <a class="btn px-0">Details</a>
+                                                <div class="box-item"><strong>Employee</strong>: Sam</div>
+                                                <div class="box-item"><strong>To Do</strong>: Lorem ipsum dolor sit
+                                                    amet, consectetur adipiscing elit. Nullam nisi nulla, viverra quis
+                                                    felis sit amet, lacinia feugiat odio. Aliquam sed orci elementum,
+                                                    volutpat dolor eget, venenatis nunc</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="timeline-box">
+                                            <div class="box-title">
+                                                 New Job To
+                                                Do
+                                            </div>
+                                            <div class="box-content">
+                                                <a class="btn px-0">Details</a>
+                                                <div class="box-item"><strong>Employee</strong>: Jones</div>
+                                                <div class="box-item"><strong>To Do</strong>: Proin sit amet aliquet
+                                                    neque, eget sagittis nunc. Proin convallis lectus quis volutpat
+                                                    pharetra. Donec quis ultrices eros. Ut eget mi faucibus.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="timeline-box">
+                                            <div class="box-title">
+                                                Pschrometrics
+                                            </div>
+                                            <div class="box-content">
+                                                <div class="box-item"><strong>Temp.</strong>: 23 <sup>o</sup>C</div>
+                                                <div class="box-item"><strong>Rh </strong>: 42</div>
+                                                <div class="box-item"><strong>Comments</strong>: Integer nec placerat
+                                                    ipsum. Aliquam id ligula suscipit, ornare dui nec, laoreet tortor.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                        <div class="timeline-box">
+                                            <div class="box-title">
+                                                 Room Created
+                                            </div>
+                                            <div class="box-content">
+                                                <div class="box-item"><strong>Name</strong>: Kitchen</div>
+                                                <div class="box-item"><strong>Floor Level </strong>: 2</div>
+                                                <div class="box-item"><strong>Dimensions</strong>: 26 x 11 x 8</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="timeline-section">
+                                <div class="timeline-date">
+                                    23, Thursday
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="timeline-box">
+                                            <div class="box-title">
+                                                 Job To Do
+                                                Completed
+                                            </div>
+                                            <div class="box-content">
+                                                <a class="btn px-0">Details</a>
+                                                <div class="box-item"><strong>Employee</strong>: Sam</div>
+                                                <div class="box-item"><strong>Employee Response</strong>: Lorem ipsum
+                                                    dolor sit amet, consectetur adipiscing elit. Nullam nisi nulla,
+                                                    viverra quis felis sit amet, lacinia feugiat odio. Aliquam sed orci
+                                                    elementum, volutpat dolor eget, venenatis nunc</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="timeline-box">
+                                            <div class="box-title">
+                                                 Equipment Entry
+                                            </div>
+                                            <div class="box-content">
+                                                <a class="btn px-0">Details</a>
+                                                <div class="box-item"><strong>ID</strong>: TW-3232</div>
+                                                <div class="box-item"><strong>Name</strong>: HEPA 600</div>
+                                                <div class="box-item"><strong>Date In</strong>: 08/22/2018</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Subscription -->
+                <div class="tab-pane fade" id="Subscription" role="tabpanel" aria-labelledby="Subscription-tab">
+                    <!-- payment -->
+                    <section class="payment">
+                        <section class="title-scroll" data-aos="fade-up" data-aos-duration="2000">
+                            <h1 data-i18n="payment-scroll-title"></h1>
+                        </section>
+                        <div class="flex-payment">
+                            <div class="card-payment" data-aos="fade-right" data-aos-duration="1000">
+                                <div class="card-head card-blue">
+                                    <span data-i18n="packge-1"></span>
+                                </div>
+                                <div class="prise">
+                                    <span class="basic" data-i18n="basic"></span>
+                                    <div>
+                                        <span class="dolar">$</span>
+                                        <span class="number">2999</span>
+                                        <span class="month" data-i18n="month">/</span>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li> <span class="px-3 textPrimary"> <i class="fa-solid fa-circle-check"></i>
+                                        </span> Image Generation</li>
+                                    <li> <span class="px-3 textPrimary"> <i class="fa-solid fa-circle-check"></i>
+                                        </span> Article Rewriting</li>
+                                    <li> <span class="px-3 textPrimary"> <i class="fa-solid fa-circle-check"></i>
+                                        </span> Email Writeup</li>
+                                    <li> <span class="px-3 textPrimary"> <i class="fa-solid fa-circle-check"></i>
+                                        </span> Monthly Reporting</li>
+                                    <li> <span class="px-3 textPrimary"> <i class="fa-solid fa-circle-check"></i>
+                                        </span> PPC Advertising</li>
+                                    <li> <span class="px-3 textPrimary"> <i class="fa-solid fa-circle-check"></i>
+                                        </span> Web Design & Development</li>
+                                </ul>
+                                <div class="boxBtn mb-5">
+                                    <a class="btn btnPrimary w-100" href="" data-i18n="choose-package"></a>
+                                </div>
+                            </div>
+                            <div class="card-payment" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="card-head card-white ">
+                                    <span data-i18n="packge-2"> </span>
+                                </div>
+                                <div class="prise">
+                                    <span class="basic" data-i18n="basic"></span>
+                                    <div>
+                                        <span class="dolar">$</span>
+                                        <span class="number">2999</span>
+                                        <span class="month" data-i18n="month">/</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center w-100 text-color">
+                                    جارى التنفيذ ..
+                                    <div class="lds-ellipsis">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li> <span class="px-3 textBurbr"> <i class="fa-solid fa-circle-check"></i> </span>
+                                        Image Generation</li>
+                                    <li> <span class="px-3 textBurbr"> <i class="fa-solid fa-circle-check"></i> </span>
+                                        Article Rewriting</li>
+                                    <li> <span class="px-3 textBurbr"> <i class="fa-solid fa-circle-check"></i> </span>
+                                        Email Writeup</li>
+                                    <li> <span class="px-3 textBurbr"> <i class="fa-solid fa-circle-check"></i> </span>
+                                        Monthly Reporting</li>
+                                    <li> <span class="px-3 textBurbr"> <i class="fa-solid fa-circle-check"></i> </span>
+                                        PPC Advertising</li>
+                                    <li> <span class="px-3 textBurbr"> <i class="fa-solid fa-circle-check"></i> </span>
+                                        Web Design & Development</li>
+                                </ul>
+
+                                <div class="boxBtn mb-5 py-0">
+                                    <a class="btn btn-outline-danger w-100" href="">طلب ايقاف الخطة</a>
+                                </div>
+                            </div>
+                            <div class="card-payment" data-aos="fade-left" data-aos-duration="1000">
+                                <div class="card-head card-orange">
+                                    <span data-i18n="packge-3"> </span>
+                                </div>
+                                <div class="prise">
+                                    <span class="basic" data-i18n="basic"></span>
+                                    <div>
+                                        <span class="dolar">$</span>
+                                        <span class="number">2999</span>
+                                        <span class="month" data-i18n="month">/</span>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li> <span class="px-3 textTomato"> <i class="fa-solid fa-circle-check"></i> </span>
+                                        Image Generation</li>
+                                    <li> <span class="px-3 textTomato"> <i class="fa-solid fa-circle-check"></i> </span>
+                                        Article Rewriting</li>
+                                    <li> <span class="px-3 textTomato"> <i class="fa-solid fa-circle-check"></i> </span>
+                                        Email Writeup</li>
+                                    <li> <span class="px-3 textTomato"> <i class="fa-solid fa-circle-check"></i> </span>
+                                        Monthly Reporting</li>
+                                    <li> <span class="px-3 textTomato"> <i class="fa-solid fa-circle-check"></i> </span>
+                                        PPC Advertising</li>
+                                    <li> <span class="px-3 textTomato"> <i class="fa-solid fa-circle-check"></i> </span>
+                                        Web Design & Development</li>
+                                </ul>
+                                <div class="boxBtn d-flex mb-5">
+                                    <button class="w-50" disabled style="font-size: 14px; color:#EEE !important;">منتهى
+                                        الصلاحية</button>
+                                    <span class="mx-1"></span>
+                                    <a class="btn btn-outline-info w-50" href="">تجديد الخطة</a>
+                                </div>
+                                <div class="btn-rate-plan">
+                                    <button id="btn-rating-plan" class="btn btn-success text-white"
+                                        data-bs-toggle="modal" data-bs-target="#alertRatingPlan"> <i
+                                            class="fa-solid fa-medal"></i> تقييم الخدمة </button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- End -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Start Logout -->
+    <div class="container">
+        <div class="col-12 p-0 my-3">
+            <button class="btn btn-outline-danger" type="button"><i class="fa-solid fa-arrow-right-from-bracket"></i>
+                Logout </button>
+        </div>
+    </div>
+    <!-- Start Logout -->
+
+    <!-- Footer Section Start -->
+    <footer class="section footer-section footer-section-03 ">
+
+        <div class="container">
+            <!-- Footer Widget Wrap Start -->
+            <div class="footer-widget-wrap">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <!-- Footer Widget Start -->
+                        <div class="footer-widget-about">
+                            <a class="logo" href="index.html"><img src="asstesClient/imag/Masar.png" alt="Logo"></a>
+                            <p>Accelerate innovation with world-class tech teams We’ll match you to an entire remote team of incredible freelance talent.</p>
+                            <div class="footer-social">
+                                <ul class="social">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Footer Widget End -->
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <!-- Footer Widget Start -->
+                        <div class="footer-widget">
+                            <h4 class="footer-widget-title">Useful Links</h4>
+
+                            <div class="widget-link">
+                                <ul class="link">
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                    <li><a href="#">About Company</a></li>
+                                    <li><a href="#">Payment Gatway</a></li>
+                                    <li><a href="#">Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Footer Widget End -->
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <!-- Footer Widget Start -->
+                        <div class="footer-widget">
+                            <h4 class="footer-widget-title">Our Services</h4>
+
+                            <div class="widget-link">
+                                <ul class="link">
+                                    <li><a href="#">Marketing</a></li>
+                                    <li><a href="#">Website</a></li>
+                                    <li><a href="#">videos</a></li>
+                                    <li><a href="#">Photographers</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Footer Widget End -->
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <!-- Footer Widget Start -->
+                        <div class="footer-widget">
+                            <h4 class="footer-widget-title">Contact Information</h4>
+
+                            <div class="widget-info">
+                                <ul>
+                                    <li>
+                                        <div class="info-icon">
+                                            <i class="fa-solid fa-phone"></i>
+                                        </div>
+                                        <div class="info-text">
+                                            <span><a href="#">+20 1030804922</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="info-icon">
+                                            <i class="fa-solid fa-envelope"></i>
+                                        </div>
+                                        <div class="info-text">
+                                            <span> <a href="#"> masargroup@gmail.com</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="info-icon">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                        </div>
+                                        <div class="info-text">
+                                            <span data-i18n="Address-p"></span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Footer Widget End -->
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Widget Wrap End -->
+        </div>
+
+        <!-- Footer Copyright Start -->
+        <div class="footer-copyright-area">
+            <div class="container">
+                <div class="footer-copyright-wrap">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <!-- Footer Copyright Text Start -->
+                            <div class="copyright-text text-center">
+                                <p>© Copyrights 2023 Masar_Groub All rights reserved. </p>
+                            </div>
+                            <!-- Footer Copyright Text End -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Copyright End -->
+    </footer>
+    <!-- Footer Section End -->
+
+
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <!--  fonts -->
+    <script src="asstesClient/fonts/all.min.js"></script>
+    <script src="asstesClient/fonts/Oswald-VariableFont_wght.ttf"></script>
+    <script src="asstesClient/fonts/Raleway-VariableFont_wght.ttf"></script>
+
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/i18next@22.4.6/dist/umd/i18next.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Js Index Java Script -->
+    <script src="asstesClient/js/translate-home.js"></script>
+    <script src="asstesClient/js/shared.js"></script>
+    <script src="asstesClient/js/profile.js"></script>
+
+
+
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        //============================== Upload cover ==============================
+        $('#form-img-upload').on('change', function () {
+            var input = this;
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#form-img').attr('src', e.target.result);
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        });
+    </script>
+    <script>
+        // show button after type value
+        $(document).ready(function () {
+            $("#profile-form :input").on("input", function () {
+                $("#updateBtn").show();
+            });
+
+            $("#profile-form").submit(function (event) {
+                event.preventDefault();
+                console.log("تم التحديث!");
+            });
+        });
+    </script>
+
+    <script>
+        jQuery(document).ready(function ($) {
+            var timelines = $('.cd-horizontal-timeline'),
+                eventsMinDistance = 60;
+
+            (timelines.length > 0) && initTimeline(timelines);
+
+            function initTimeline(timelines) {
+                timelines.each(function () {
+                    var timeline = $(this),
+                        timelineComponents = {};
+                    //cache timeline components 
+                    timelineComponents['timelineWrapper'] = timeline.find('.events-wrapper');
+                    timelineComponents['eventsWrapper'] = timelineComponents['timelineWrapper'].children('.events');
+                    timelineComponents['fillingLine'] = timelineComponents['eventsWrapper'].children('.filling-line');
+                    timelineComponents['timelineEvents'] = timelineComponents['eventsWrapper'].find('a');
+                    timelineComponents['timelineDates'] = parseDate(timelineComponents['timelineEvents']);
+                    timelineComponents['eventsMinLapse'] = minLapse(timelineComponents['timelineDates']);
+                    timelineComponents['timelineNavigation'] = timeline.find('.cd-timeline-navigation');
+                    timelineComponents['eventsContent'] = timeline.children('.events-content');
+
+                    //assign a left postion to the single events along the timeline
+                    setDatePosition(timelineComponents, eventsMinDistance);
+                    //assign a width to the timeline
+                    var timelineTotWidth = setTimelineWidth(timelineComponents, eventsMinDistance);
+                    //the timeline has been initialize - show it
+                    timeline.addClass('loaded');
+
+                    //detect click on the next arrow
+                    timelineComponents['timelineNavigation'].on('click', '.next', function (event) {
+                        event.preventDefault();
+                        updateSlide(timelineComponents, timelineTotWidth, 'next');
+                    });
+                    //detect click on the prev arrow
+                    timelineComponents['timelineNavigation'].on('click', '.prev', function (event) {
+                        event.preventDefault();
+                        updateSlide(timelineComponents, timelineTotWidth, 'prev');
+                    });
+                    //detect click on the a single event - show new event content
+                    timelineComponents['eventsWrapper'].on('click', 'a', function (event) {
+                        event.preventDefault();
+                        timelineComponents['timelineEvents'].removeClass('selected');
+                        $(this).addClass('selected');
+                        updateOlderEvents($(this));
+                        updateFilling($(this), timelineComponents['fillingLine'], timelineTotWidth);
+                        updateVisibleContent($(this), timelineComponents['eventsContent']);
+                    });
+
+                    //on swipe, show next/prev event content
+                    timelineComponents['eventsContent'].on('swipeleft', function () {
+                        var mq = checkMQ();
+                        (mq == 'mobile') && showNewContent(timelineComponents, timelineTotWidth, 'next');
+                    });
+                    timelineComponents['eventsContent'].on('swiperight', function () {
+                        var mq = checkMQ();
+                        (mq == 'mobile') && showNewContent(timelineComponents, timelineTotWidth, 'prev');
+                    });
+
+                    //keyboard navigation
+                    $(document).keyup(function (event) {
+                        if (event.which == '37' && elementInViewport(timeline.get(0))) {
+                            showNewContent(timelineComponents, timelineTotWidth, 'prev');
+                        } else if (event.which == '39' && elementInViewport(timeline.get(0))) {
+                            showNewContent(timelineComponents, timelineTotWidth, 'next');
+                        }
+                    });
+                });
+            }
+
+            function updateSlide(timelineComponents, timelineTotWidth, string) {
+                //retrieve translateX value of timelineComponents['eventsWrapper']
+                var translateValue = getTranslateValue(timelineComponents['eventsWrapper']),
+                    wrapperWidth = Number(timelineComponents['timelineWrapper'].css('width').replace('px', ''));
+                //translate the timeline to the left('next')/right('prev') 
+                (string == 'next')
+                    ? translateTimeline(timelineComponents, translateValue - wrapperWidth + eventsMinDistance, wrapperWidth - timelineTotWidth)
+                    : translateTimeline(timelineComponents, translateValue + wrapperWidth - eventsMinDistance);
+            }
+
+            function showNewContent(timelineComponents, timelineTotWidth, string) {
+                //go from one event to the next/previous one
+                var visibleContent = timelineComponents['eventsContent'].find('.selected'),
+                    newContent = (string == 'next') ? visibleContent.next() : visibleContent.prev();
+
+                if (newContent.length > 0) { //if there's a next/prev event - show it
+                    var selectedDate = timelineComponents['eventsWrapper'].find('.selected'),
+                        newEvent = (string == 'next') ? selectedDate.parent('li').next('li').children('a') : selectedDate.parent('li').prev('li').children('a');
+
+                    updateFilling(newEvent, timelineComponents['fillingLine'], timelineTotWidth);
+                    updateVisibleContent(newEvent, timelineComponents['eventsContent']);
+                    newEvent.addClass('selected');
+                    selectedDate.removeClass('selected');
+                    updateOlderEvents(newEvent);
+                    updateTimelinePosition(string, newEvent, timelineComponents, timelineTotWidth);
+                }
+            }
+
+            function updateTimelinePosition(string, event, timelineComponents, timelineTotWidth) {
+                //translate timeline to the left/right according to the position of the selected event
+                var eventStyle = window.getComputedStyle(event.get(0), null),
+                    eventLeft = Number(eventStyle.getPropertyValue("left").replace('px', '')),
+                    timelineWidth = Number(timelineComponents['timelineWrapper'].css('width').replace('px', '')),
+                    timelineTotWidth = Number(timelineComponents['eventsWrapper'].css('width').replace('px', ''));
+                var timelineTranslate = getTranslateValue(timelineComponents['eventsWrapper']);
+
+                if ((string == 'next' && eventLeft > timelineWidth - timelineTranslate) || (string == 'prev' && eventLeft < - timelineTranslate)) {
+                    translateTimeline(timelineComponents, - eventLeft + timelineWidth / 2, timelineWidth - timelineTotWidth);
+                }
+            }
+
+            function translateTimeline(timelineComponents, value, totWidth) {
+                var eventsWrapper = timelineComponents['eventsWrapper'].get(0);
+                value = (value > 0) ? 0 : value; //only negative translate value
+                value = (!(typeof totWidth === 'undefined') && value < totWidth) ? totWidth : value; //do not translate more than timeline width
+                setTransformValue(eventsWrapper, 'translateX', value + 'px');
+                //update navigation arrows visibility
+                (value == 0) ? timelineComponents['timelineNavigation'].find('.prev').addClass('inactive') : timelineComponents['timelineNavigation'].find('.prev').removeClass('inactive');
+                (value == totWidth) ? timelineComponents['timelineNavigation'].find('.next').addClass('inactive') : timelineComponents['timelineNavigation'].find('.next').removeClass('inactive');
+            }
+
+            function updateFilling(selectedEvent, filling, totWidth) {
+                //change .filling-line length according to the selected event
+                var eventStyle = window.getComputedStyle(selectedEvent.get(0), null),
+                    eventLeft = eventStyle.getPropertyValue("left"),
+                    eventWidth = eventStyle.getPropertyValue("width");
+                eventLeft = Number(eventLeft.replace('px', '')) + Number(eventWidth.replace('px', '')) / 2;
+                var scaleValue = eventLeft / totWidth;
+                setTransformValue(filling.get(0), 'scaleX', scaleValue);
+            }
+
+            function setDatePosition(timelineComponents, min) {
+                for (i = 0; i < timelineComponents['timelineDates'].length; i++) {
+                    var distance = daydiff(timelineComponents['timelineDates'][0], timelineComponents['timelineDates'][i]),
+                        distanceNorm = Math.round(distance / timelineComponents['eventsMinLapse']) + 2;
+                    timelineComponents['timelineEvents'].eq(i).css('left', distanceNorm * min + 'px');
+                }
+            }
+
+            function setTimelineWidth(timelineComponents, width) {
+                var timeSpan = daydiff(timelineComponents['timelineDates'][0], timelineComponents['timelineDates'][timelineComponents['timelineDates'].length - 1]),
+                    timeSpanNorm = timeSpan / timelineComponents['eventsMinLapse'],
+                    timeSpanNorm = Math.round(timeSpanNorm) + 4,
+                    totalWidth = timeSpanNorm * width;
+                timelineComponents['eventsWrapper'].css('width', totalWidth + 'px');
+                updateFilling(timelineComponents['timelineEvents'].eq(0), timelineComponents['fillingLine'], totalWidth);
+
+                return totalWidth;
+            }
+
+            function updateVisibleContent(event, eventsContent) {
+                var eventDate = event.data('date'),
+                    visibleContent = eventsContent.find('.selected'),
+                    selectedContent = eventsContent.find('[data-date="' + eventDate + '"]'),
+                    selectedContentHeight = selectedContent.height();
+
+                if (selectedContent.index() > visibleContent.index()) {
+                    var classEnetering = 'selected enter-right',
+                        classLeaving = 'leave-left';
+                } else {
+                    var classEnetering = 'selected enter-left',
+                        classLeaving = 'leave-right';
+                }
+
+                selectedContent.attr('class', classEnetering);
+                visibleContent.attr('class', classLeaving).one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function () {
+                    visibleContent.removeClass('leave-right leave-left');
+                    selectedContent.removeClass('enter-left enter-right');
+                });
+                eventsContent.css('height', selectedContentHeight + 'px');
+            }
+
+            function updateOlderEvents(event) {
+                event.parent('li').prevAll('li').children('a').addClass('older-event').end().end().nextAll('li').children('a').removeClass('older-event');
+            }
+
+            function getTranslateValue(timeline) {
+                var timelineStyle = window.getComputedStyle(timeline.get(0), null),
+                    timelineTranslate = timelineStyle.getPropertyValue("-webkit-transform") ||
+                        timelineStyle.getPropertyValue("-moz-transform") ||
+                        timelineStyle.getPropertyValue("-ms-transform") ||
+                        timelineStyle.getPropertyValue("-o-transform") ||
+                        timelineStyle.getPropertyValue("transform");
+
+                if (timelineTranslate.indexOf('(') >= 0) {
+                    var timelineTranslate = timelineTranslate.split('(')[1];
+                    timelineTranslate = timelineTranslate.split(')')[0];
+                    timelineTranslate = timelineTranslate.split(',');
+                    var translateValue = timelineTranslate[4];
+                } else {
+                    var translateValue = 0;
+                }
+
+                return Number(translateValue);
+            }
+
+            function setTransformValue(element, property, value) {
+                element.style["-webkit-transform"] = property + "(" + value + ")";
+                element.style["-moz-transform"] = property + "(" + value + ")";
+                element.style["-ms-transform"] = property + "(" + value + ")";
+                element.style["-o-transform"] = property + "(" + value + ")";
+                element.style["transform"] = property + "(" + value + ")";
+            }
+
+            //based on http://stackoverflow.com/questions/542938/how-do-i-get-the-number-of-days-between-two-dates-in-javascript
+            function parseDate(events) {
+                var dateArrays = [];
+                events.each(function () {
+                    var dateComp = $(this).data('date').split('/'),
+                        newDate = new Date(dateComp[2], dateComp[1] - 1, dateComp[0]);
+                    dateArrays.push(newDate);
+                });
+                return dateArrays;
+            }
+
+            function parseDate2(events) {
+                var dateArrays = [];
+                events.each(function () {
+                    var singleDate = $(this),
+                        dateComp = singleDate.data('date').split('T');
+                    if (dateComp.length > 1) { //both DD/MM/YEAR and time are provided
+                        var dayComp = dateComp[0].split('/'),
+                            timeComp = dateComp[1].split(':');
+                    } else if (dateComp[0].indexOf(':') >= 0) { //only time is provide
+                        var dayComp = ["2000", "0", "0"],
+                            timeComp = dateComp[0].split(':');
+                    } else { //only DD/MM/YEAR
+                        var dayComp = dateComp[0].split('/'),
+                            timeComp = ["0", "0"];
+                    }
+                    var newDate = new Date(dayComp[2], dayComp[1] - 1, dayComp[0], timeComp[0], timeComp[1]);
+                    dateArrays.push(newDate);
+                });
+                return dateArrays;
+            }
+
+            function daydiff(first, second) {
+                return Math.round((second - first));
+            }
+
+            function minLapse(dates) {
+                //determine the minimum distance among events
+                var dateDistances = [];
+                for (i = 1; i < dates.length; i++) {
+                    var distance = daydiff(dates[i - 1], dates[i]);
+                    dateDistances.push(distance);
+                }
+                return Math.min.apply(null, dateDistances);
+            }
+
+            /*
+                How to tell if a DOM element is visible in the current viewport?
+                http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+            */
+            function elementInViewport(el) {
+                var top = el.offsetTop;
+                var left = el.offsetLeft;
+                var width = el.offsetWidth;
+                var height = el.offsetHeight;
+
+                while (el.offsetParent) {
+                    el = el.offsetParent;
+                    top += el.offsetTop;
+                    left += el.offsetLeft;
+                }
+
+                return (
+                    top < (window.pageYOffset + window.innerHeight) &&
+                    left < (window.pageXOffset + window.innerWidth) &&
+                    (top + height) > window.pageYOffset &&
+                    (left + width) > window.pageXOffset
+                );
+            }
+
+            function checkMQ() {
+                //check if mobile or desktop device
+                return window.getComputedStyle(document.querySelector('.cd-horizontal-timeline'), '::before').getPropertyValue('content').replace(/'/g, "").replace(/"/g, "");
+            }
+        });
+    </script>
+</body>
+
+</html>
