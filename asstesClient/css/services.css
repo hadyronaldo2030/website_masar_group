@@ -1190,10 +1190,9 @@ End Responsive
 
 .choose-us-item-02 .choose-us-content p {
   font-size: 16px;
-  line-height: 30px;
-  padding: 20px 0;
   color: var(--p);
   overflow-y: scroll;
+  text-align: center;
 }
 
 .choose-us-item-02:hover .choose-us-img img {
