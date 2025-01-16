@@ -915,11 +915,13 @@ End Responsive
   margin-top: 30px;
 }
 
-.choose-us-item .choose-us-img {
+.choose-us-img {
   position: relative;
   border-radius: 10px;
   overflow: hidden;
   transition: all 0.3s linear;
+  display: flex;
+  justify-content: center;
 }
 
 .choose-us-item .choose-us-img a {
