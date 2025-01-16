@@ -72,27 +72,27 @@
 
            <div class="sidebar-content">
               <div class="sidebar-list">
-                <a href="#" class="sidebar-link active-link">
+                <a href="./index.html" class="sidebar-link">
                     <i class="fa-solid fa-house"></i>
                     <span class="sidebar-link-name" data-i18n="Home"></span>
                  </a>
 
-                 <a href="service.html" class="sidebar-link">
+                 <a href="./service.html" class="sidebar-link">
                     <i class="fa-solid fa-hand-holding-heart"></i>
                     <span class="sidebar-link-name" data-i18n="Services"></span>
                  </a>
                  
-                 <a href="#" class="sidebar-link">
+                 <a href="./payment.html" class="sidebar-link">
                     <i class="fa-solid fa-coins"></i>
                     <span class="sidebar-link-name" data-i18n="Payment"></span>
                  </a>
 
-                 <a href="#" class="sidebar-link">
+                 <a href="./about-us.html" class="sidebar-link active-link">
                     <i class="fa-solid fa-circle-exclamation"></i>
                     <span class="sidebar-link-name" data-i18n="About"></span>
                  </a>
 
-                 <a href="#" class="sidebar-link">
+                 <a href="./contact-us.html" class="sidebar-link">
                     <i class="fa-solid fa-square-phone"></i>
                     <span class="sidebar-link-name" data-i18n="contact"></span>
                  </a>
@@ -103,12 +103,16 @@
               </h3>
 
               <div class="sidebar-list">
-                 <a href="#" class="sidebar-link">
+                 <a href="./privacy-policy.html" class="sidebar-link">
                     <i class="fa-solid fa-lock"></i>
                     <span class="sidebar-link-name" data-i18n="Privacy"></span>
                  </a>
-
-                 <a href="#" class="sidebar-link">
+                <button class="icon themeicons sidebar-link">
+                    <i class="fa-light fa-lightbulb fa-lg themeicon btnLight"></i>
+                    <i class="fa-light fa-moon fa-lg themeicon d-none"></i>
+                    <span class="sidebar-link-name" data-i18n="mode"></span>
+                </button>
+                 <!-- <a href="#" class="sidebar-link">
                     <i class="fa-solid fa-gear"></i>
                     <span class="sidebar-link-name" data-i18n="Settings"></span>
                  </a>
@@ -116,20 +120,20 @@
                  <a href="#" class="sidebar-link">
                     <i class="fa-solid fa-arrow-right-from-bracket"></i>
                     <span class="sidebar-link-name" data-i18n="Logout"></span>
-                 </a>
+                 </a> -->
               </div>
            </div>
 
-           <div class="sidebar-account">
+           <a href="./profile.html" class="sidebar-account">
               <img src="asstesClient/imag/user.png" alt="sidebar image" class="sidebar-perfil">
 
               <div class="sidebar-names">
-                 <h3 class="sidebar-name">Will Lens</h3>
-                 <span class="sidebar-email">willens@email.com</span>
+                 <h3 class="sidebar-name">Guest</h3>
+                 <span class="sidebar-email">guest@email.com</span>
               </div>
 
               <i class="ri-arrow-right-s-line"></i>
-           </div>
+           </a>
         </div>
     </aside>
      
@@ -163,22 +167,22 @@
                 </ul>
                 <!-- icons -->
                 <div class="iconsnav">
-                    <div class=" d-flex">
-                        <div class="nav-item dropdown">
-                            <button class="dropdown-toggle" type="button" id="languageDropdown" data-i18n="lang" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> en </button>
-                            <div class="dropdown-menu" id="lang" aria-labelledby="languageDropdown">
-                                <button class="dropdown-item toggleTyped" onclick="changeLanguage('en')">English</button>
-                                <button class="dropdown-item toggleTyped" onclick="changeLanguage('ar')">العربية</button>
-                            </div>
-                        </div>
-                        <button class="icon themeicons mx-3">
+                    <div class=" d-none d-lg-flex">
+                        <button class="icon themeicons">
                             <i class="fa-light fa-lightbulb fa-lg themeicon btnLight"></i>
                             <i class="fa-light fa-moon fa-lg themeicon d-none"></i>
                         </button>
-                        <button class="toggle-sidebar d-lg-none ml-4 p-0">
-                            <i class="fa-light fa-bars-staggered fa-lg"></i>
-                        </button>
                     </div>
+                    <div class="nav-item dropdown mx-3">
+                        <button class="dropdown-toggle" type="button" id="languageDropdown" data-i18n="lang" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> en </button>
+                        <div class="dropdown-menu" id="lang" aria-labelledby="languageDropdown">
+                            <button class="dropdown-item toggleTyped" onclick="changeLanguage('en')">English</button>
+                            <button class="dropdown-item toggleTyped" onclick="changeLanguage('ar')">العربية</button>
+                        </div>
+                    </div>
+                    <button class="toggle-sidebar d-lg-none ml-4 p-0">
+                        <i class="fa-light fa-bars-staggered fa-lg"></i>
+                    </button>
                     <!-- toogle Sign in Sign up -->
                     <!-- <a class="signIn" href="login.html">Sign in</a> -->
                     <!-- <a class="signUp" href="login.html">Sign Up</a> -->

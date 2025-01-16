@@ -575,7 +575,7 @@ button {
   top: 0 !important;
   width: 280px;
   height: 100%;
-  padding: 2rem 1.5rem;
+  padding: 10px;
   background: var(--bs-gradient);
   backdrop-filter: blur(45px);
   -webkit-backdrop-filter: blur(16px);
@@ -714,6 +714,8 @@ button {
   display: flex;
   align-items: center;
   column-gap: .5rem;
+  position: fixed;
+  bottom: 15px;
 }
 
 .sidebar-name {

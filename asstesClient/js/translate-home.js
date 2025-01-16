@@ -16,6 +16,7 @@ i18next.init({
                 "Settings": "Settings",
                 "Logout": "Logout",
                 "lang": " en ",
+                "mode": "Mode",
 
                 "Contact-Us": " Contact Us ",
                 "Email": " Email ",
@@ -164,6 +165,7 @@ i18next.init({
                 "Settings": "الاعدادت",
                 "Logout": "تسجيل خروج",
                 "lang": " ar ",
+                "mode": "الوضع",
 
                 "Contact-Us": " اتصل بنا",
                 "Email": " البريد الاكترونى ",
