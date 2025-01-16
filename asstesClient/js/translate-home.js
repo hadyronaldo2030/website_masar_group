@@ -35,7 +35,19 @@ i18next.init({
                 "article-header": "In the rapidly evolving digital arena, the interaction between marketing and programming has become an integral part of companies' success. The integration between these two areas can open a world of opportunities, allowing companies to reach their target audience effectively but also create powerful user-centric digital experiences.",
                 "get started": "More ",
                 "book now": "Book Now",
-                
+
+                "footer-p": "Accelerate innovation with world-class tech teams We’ll match you to an entire remote team of incredible freelance talent.",
+                "footer-terms": "Terms & Conditions",
+                "footer-about": "About Company",
+                "footer-payment": "Payment Gatway",
+                "footer-Policy": "Policy",
+                "footer-Marketing": "Marketing",
+                "footer-Website": "Website",
+                "footer-videos": "videos",
+                "footer-Photographers": "Photographers",
+                "footer-Contact": "Contact Information",
+                "footer-Copyrights": "© Copyrights 2023 by Masar_Groub. ",
+
                 "Features-title": "Features & Facilities",
                 "Features-title2": "Services provided by the company in the field of electronic marketing and programming.",
                 "Features-item-head-1": "The Importance of Digital Marketing:",
@@ -50,13 +62,13 @@ i18next.init({
                 "Features-item-p-5": "Explanation of the necessary security measures in the field of digital marketing and website programming to protect data and brand reputation.",
                 "Features-item-head-6": "Post-Development Services and Technical Support:",
                 "Features-item-p-6": "Focus on post-development services, such as continuous website maintenance and effective technical support to ensure smooth and sustainable operation.",
-                
+
                 "section-title": "Ensure Rapid Growth in Your Business.",
                 "section-item-head-1": "Strategic Digital Marketing :",
                 "section-item-p-1": "Deploy targeted digital marketing strategies, encompassing social media, PPC, and SEO, to swiftly expand your online presence, attract a broader audience, and convert leads into customers.",
                 "section-item-head-2": "Data-Driven Decision Making:",
                 "section-item-p-2": "Embrace a data-centric approach for quick, informed decisions, utilizing analytics to understand customer behavior, market trends, and operational efficiency, ensuring agile adaptation to changing conditions and identifying growth opportunities.",
-                
+
                 "section-scroll-title": "Getting started in e-marketing",
                 "section-scroll-p": "Start scrolling to see how it works.",
                 "step-1": "Step 1",
@@ -80,7 +92,7 @@ i18next.init({
                 "basic": "BASIC",
                 "choose-package": "Choose this Package",
                 "month": "month",
-                
+
                 "questions-scroll-title": "Questions & Answers",
                 "questions-scroll-p": "Below are some of the most common questions we receive about our site",
                 "questions-scroll-head-1": "What is digital marketing and why is it important?",
@@ -99,6 +111,42 @@ i18next.init({
                 "questions-scroll-p-7": "Identify products or services to sell, choose a reliable e-commerce platform, provide secure and diverse payment methods. Implement online marketing strategies to increase awareness and sales.",
 
                 "comments-scroll-title": "What our customers say about us",
+
+                "services": {
+                    "title": "Our services",
+                    "description": "About our products"
+                },
+
+                "tabs": {
+                    "marketing": "Marketing",
+                    "programming": "Programming",
+                    "photography": "Photography",
+                    "videos": "Videos"
+                },
+
+                "services": {
+                    "marketing1_title": "Digital Marketing",
+                    "marketing1_description": "We offer innovative and effective marketing solutions to increase brand awareness and achieve sustainable growth.",
+                    "team_title": "Highly Professional Team",
+                    "team_description": "We ensure the best team of professionals capable of delivering exceptional results in every project.",
+                    "photography_title": "Photography Services",
+                    "photography_description": "We provide professional photography services to capture your important moments with high quality and unmatched creativity.",
+                    "video_title": "Video Production",
+                    "video_description": "We offer professional video production services that contribute to enhancing your marketing message.",
+                    "infrastructure_title": "Infrastructure Technology",
+                    "infrastructure_description": "We provide modern infrastructure technology solutions that help enhance operational efficiency.",
+                    "investment_title": "High Return Investment Ideas",
+                    "investment_description": "We present innovative investment ideas that help you achieve outstanding financial returns.",
+                    "lorem_title": "Digital Performance Enhancement",
+                    "lorem_description": "We provide services to enhance the digital performance of businesses and organizations to maximize the benefit of modern technology.",
+                    "lorem2_title": "Data Analysis",
+                    "lorem2_description": "We assist you in collecting and analyzing data to gain strategic insights that support decision-making in your business."
+                },
+
+                "plans": {
+                    "subscriptions_title": "Plans and Subscriptions",
+                    "subscriptions_description": "Choose the plan that suits you"
+                },
             }
         },
         ar: {
@@ -116,7 +164,7 @@ i18next.init({
                 "Settings": "الاعدادت",
                 "Logout": "تسجيل خروج",
                 "lang": " ar ",
-                
+
                 "Contact-Us": " اتصل بنا",
                 "Email": " البريد الاكترونى ",
                 "Phone": " الهاتف ",
@@ -135,7 +183,20 @@ i18next.init({
                 "article-header": "في الساحة الرقمية السريعة التطور، أصبح التفاعل بين التسويق والبرمجة أمرًا أساسيًا لنجاح الأعمال. يمكن التكامل السلس بين هاتين الجانبين فتح عالم من الفرص، مما يتيح للشركات أن تصل إلى جمهورها المستهدف بفعالية، وأيضًا إنشاء تجارب رقمية قوية وموجهة للمستخدم.",
                 "get started": "المزيد",
                 "book now": "احجز الان",
-                
+
+                "footer-p": "سرّع الابتكار مع فرق تقنية عالمية المستوى. سنوصلك بفريق كامل من المواهب الحرة الرائعة عن بُعد.",
+                "footer-terms": "الشروط والأحكام",
+                "footer-about": "عن الشركة",
+                "footer-payment": "بوابة الدفع",
+                "footer-Policy": "السياسات",
+                "footer-Marketing": "التسويق",
+                "footer-Website": "الموقع الإلكتروني",
+                "footer-videos": "الفيديوهات",
+                "footer-Photographers": "المصورون",
+                "footer-Contact": "معلومات التواصل",
+                "footer-Copyrights": "© جميع الحقوق محفوظة لدى مسار جروب 2023",
+
+
                 "Features-title": "الميزات والخدمات",
                 "Features-title2": "الخدمات التي تقدمها الشركة في مجال التسويق الإلكتروني والبرمجة.",
                 "Features-item-head-1": "أهمية التسويق الرقمي :",
@@ -150,13 +211,13 @@ i18next.init({
                 "Features-item-p-5": "شرح الإجراءات الأمنية اللازمة في مجال التسويق الرقمي وبرمجة المواقع الإلكترونية لحماية البيانات وسمعة العلامة التجارية.",
                 "Features-item-head-6": "خدمات ما بعد التطوير والدعم الفني :",
                 "Features-item-p-6": "التركيز على خدمات ما بعد التطوير، مثل الصيانة المستمرة للموقع والدعم الفني الفعال لضمان التشغيل السلس والمستدام.",
-                
+
                 "section-title": "ضمان النمو السريع في عملك.",
                 "section-item-head-1": "التسويق الرقمي الاستراتيجي :",
                 "section-item-p-1": "قم بنشر استراتيجيات التسويق الرقمي المستهدفة، والتي تشمل وسائل التواصل الاجتماعي، و PPC، وتحسين محركات البحث، لتوسيع تواجدك عبر الإنترنت بسرعة، وجذب جمهور أوسع، وتحويل العملاء المحتملين إلى عملاء.",
                 "section-item-head-2": "اتخاذ القرارات المستندة إلى البيانات:",
                 "section-item-p-2": "تبني نهج يركز على البيانات لاتخاذ قرارات سريعة ومستنيرة، واستخدام التحليلات لفهم سلوك العملاء واتجاهات السوق والكفاءة التشغيلية، مما يضمن التكيف السريع مع الظروف المتغيرة وتحديد فرص النمو.",
-                
+
                 "section-scroll-title": "البدء في التسويق الإلكتروني",
                 "section-scroll-p": "ابدأ بالتمرير لترى كيف يعمل.",
                 "step-1": "الخطوة الاولى",
@@ -171,7 +232,7 @@ i18next.init({
                 "step-4": "الخطوة الرابعه",
                 "section-scroll-head-4": "خطوات تطوير منصة التجارة الإلكترونية",
                 "section-scroll-p-4": "اختر فكرة عمل فريدة وحدد السوق المستهدف. أنشئ منصة للتجارة الإلكترونية سهلة الاستخدام وآمنة، مع توفير خيارات دفع متنوعة. الاعتماد على استراتيجيات التسويق عبر الإنترنت لجذب العملاء وزيادة المبيعات. استمر في دمج هذه الخطوات مع رؤيتك الفريدة للشركة ووضع الخطط الإستراتيجية للنمو السريع والمستدام.",
-                
+
                 "payment-scroll-title": "الاشتراكات وخطط الدفع",
                 "payment-scroll-p": "اختر الخطة التي تناسبك.",
                 "packge-1": "الحزمة 1",
@@ -199,6 +260,41 @@ i18next.init({
                 "questions-scroll-p-7": "حدد المنتجات أو الخدمات التي ترغب في بيعها، واختر منصة تجارة إلكترونية موثوقة، وقدم وسائل دفع آمنة ومتنوعة. اعتمد استراتيجيات تسويق عبر الإنترنت لزيادة الوعي والمبيعات",
 
                 "comments-scroll-title": "ماذا يقول عملاؤنا عنا",
+
+                "services": {
+                    "title": "خدماتنا",
+                    "description": "عن منتجاتنا"
+                },
+                "tabs": {
+                    "marketing": "التسويق",
+                    "programming": "البرمجة",
+                    "photography": "التصوير الفوتوغرافي",
+                    "videos": "الفيديوهات"
+                },
+
+                "services": {
+                    "marketing1_title": "التسويق الرقمي",
+                    "marketing1_description": "نقدم حلول تسويقية مبتكرة وفعّالة لزيادة الوعي بالعلامات التجارية وتحقيق نمو مستدام.",
+                    "team_title": "فريق محترف عالي الكفاءة",
+                    "team_description": "نحن نضمن لك أفضل فريق من المحترفين القادرين على تحقيق نتائج متميزة في كل مشروع.",
+                    "photography_title": "التصوير الفوتوغرافي",
+                    "photography_description": "نحن نقدم خدمات التصوير الفوتوغرافي لتوثيق لحظاتك الهامة بجودة عالية وابتكار لا مثيل له.",
+                    "video_title": "إنتاج الفيديو",
+                    "video_description": "نحن نقدم خدمات إنتاج الفيديوهات الاحترافية التي تساهم في تعزيز رسالتك التسويقية.",
+                    "infrastructure_title": "تقنيات البنية التحتية",
+                    "infrastructure_description": "نحن نوفر حلول تقنيات البنية التحتية الحديثة التي تساعد في تعزيز الكفاءة التشغيلية.",
+                    "investment_title": "أفكار استثمارية ذات عوائد مرتفعة",
+                    "investment_description": "نقدم لك أفكارًا مبتكرة للاستثمار تساعدك على تحقيق عوائد مالية مميزة.",
+                    "lorem_title": "تحسين الأداء الرقمي",
+                    "lorem_description": "نحن نقدم خدمات لتحسين الأداء الرقمي للشركات والمؤسسات لتحقيق أقصى استفادة من التقنية الحديثة.",
+                    "lorem2_title": "تحليل البيانات",
+                    "lorem2_description": "نساعدك في جمع وتحليل البيانات للحصول على رؤى استراتيجية تدعم اتخاذ القرارات في عملك."
+                },
+
+                "plans": {
+                    "subscriptions_title": "الخطط والاشتراكات",
+                    "subscriptions_description": "اختر الخطة التي تناسبك"
+                },
 
             }
         }
@@ -250,27 +346,27 @@ function updateContent() {
         autoplayHoverPause: true,
         animateOutDelay: 1000,
         animateInDelay: 1500,
-        responsive:{
-            300:{
-                items:1,
-                nav:true
-            },600:{
-                items:2,
-                nav:false
+        responsive: {
+            300: {
+                items: 1,
+                nav: true
+            }, 600: {
+                items: 2,
+                nav: false
             },
-            990:{
-                items:3,
-                nav:false
+            990: {
+                items: 3,
+                nav: false
             },
-            1200:{
-                items:4,
-                nav:true,
-                loop:false
+            1200: {
+                items: 4,
+                nav: true,
+                loop: false
             },
-            1600:{
-                items:5,
-                nav:true,
-                loop:false
+            1600: {
+                items: 5,
+                nav: true,
+                loop: false
             }
         }
     });
